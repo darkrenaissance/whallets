@@ -32,25 +32,16 @@
             "info": "3AC founder, enterpreteur, Deribit, uncommon core",
             "wallets": {
                 "erc": "0x4093fbe60ab50ab79a5bd32fa2adec255372f80e"
-                
-        },
-        "alameda": {
-            "twitter": "https://twitter.com/SBF_Alameda",
-            "info": "ftx foundation",
-            "wallets": {
-                "erc": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
-                "bsc": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
-                "poly": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
-                "avax": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b"
-            }
-        },
+                }
+            },
+
         "@zhusu_3ac_3": {
             "twitter": "https://twitter.com/zhusu",
             "info": "3AC founder, enterpreteur, Deribit, uncommon core",
             "wallets": {
-                "erc": "0x3ba21b6477f48273f41d241aa3722ffb9e07e247",
-                
-        },
+                "erc": "0x3ba21b6477f48273f41d241aa3722ffb9e07e247"
+                }
+            },
         "alameda": {
             "twitter": "https://twitter.com/SBF_Alameda",
             "info": "ftx foundation",
@@ -192,7 +183,6 @@
             "wallets": {
                 "erc": "0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3",
                 "ftm": "0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3"
-               
             }
         },
         "parafi": {
@@ -205,24 +195,23 @@
                 "avax": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363"
             }
         },
-
-            "gmx_degen": {
-                "twitter": " ",
-                "info": "degen who was early in gmx, active small cap investor",
-                "ens": "",
-                "wallets": {
-                    "erc": "0x1e7127c81c8a58661a0811f026b6be66533934be"
-                }
+        "gmx_degen": {
+            "twitter": " ",
+            "info": "degen who was early in gmx, active small cap investor",
+            "ens": "",
+            "wallets": {
+                "erc": "0x1e7127c81c8a58661a0811f026b6be66533934be"
             }
+        }
         },
-
-                "spl_wallets": {
-                    "@Cyrii": {
-                        "twitter": "https://twitter.com/cyrii_MM",
-                        "info": "$COPE - main dev/founder, main holder, cult",
-                        "wallets": {
-                            "spl": "13pHDZsFyuTJ9uMA8SbY8vjBs5TmZ3jJeiCwvEyax4tu"
-                        }
-                    }
+        "spl_wallets": {
+            "@Cyrii": {
+                "twitter": "https://twitter.com/cyrii_MM",
+                "info": "$COPE - main dev/founder, main holder, cult",
+                "wallets": {
+                    "spl": "13pHDZsFyuTJ9uMA8SbY8vjBs5TmZ3jJeiCwvEyax4tu"
                 }
             }
+        }
+    }
+
