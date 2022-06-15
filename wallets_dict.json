@@ -1,0 +1,228 @@
+{
+    "evm_wallets": {
+        "@vitalik.eth": {
+            "twitter": "https://twitter.com/VitalikButerin",
+            "info": "ETH foundation, influencer, researcher, cult",
+            "ens": "vitalik.eth",
+            "wallets": {
+                "erc": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+                "bsc": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+                "poly": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+                "heco": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+                "ftm": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+                "optm": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+                "avax": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+                "arb": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+            }
+        },
+        "@zhusu_3ac_1": {
+            "twitter": "https://twitter.com/zhusu",
+            "info": "3AC founder, enterpreteur, Deribit, uncommon core",
+            "wallets": {
+                "erc": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
+                "bsc": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
+                "poly": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
+                "heco": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
+                "ftm": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
+                "avax": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3"
+            }
+        },
+        "@zhusu_3ac_2": {
+            "twitter": "https://twitter.com/zhusu",
+            "info": "3AC founder, enterpreteur, Deribit, uncommon core",
+            "wallets": {
+                "erc": "0x4093fbe60ab50ab79a5bd32fa2adec255372f80e",
+                
+        },
+        "alameda": {
+            "twitter": "https://twitter.com/SBF_Alameda",
+            "info": "ftx foundation",
+            "wallets": {
+                "erc": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
+                "bsc": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
+                "poly": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
+                "avax": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b"
+            }
+        },
+        "@zhusu_3ac_3": {
+            "twitter": "https://twitter.com/zhusu",
+            "info": "3AC founder, enterpreteur, Deribit, uncommon core",
+            "wallets": {
+                "erc": "0x3ba21b6477f48273f41d241aa3722ffb9e07e247",
+                
+        },
+        "alameda": {
+            "twitter": "https://twitter.com/SBF_Alameda",
+            "info": "ftx foundation",
+            "wallets": {
+                "erc": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
+                "bsc": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
+                "poly": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
+                "avax": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b"
+            }
+        },
+        "alameda_2": {
+            "twitter": "https://twitter.com/SBF_Alameda",
+            "info": "ftx foundation",
+            "wallets": {
+                "erc": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
+                "bsc": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
+                "poly": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
+                "avax": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
+                "heco": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
+                "ftm": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
+                "optm": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
+                "arb": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83"
+            }
+        },
+        "blocktower": {
+            "twitter": " ",
+            "info": "fund",
+            "wallets": {
+                "erc": "0x43adde52c6c142912662d3e427709db5cac9b811",
+                "bsc": "0x43adde52c6c142912662d3e427709db5cac9b811",
+                "poly": "0x43adde52c6c142912662d3e427709db5cac9b811",
+                "avax": "0x43adde52c6c142912662d3e427709db5cac9b811",
+                "heco": "0x43adde52c6c142912662d3e427709db5cac9b811",
+                "ftm": "0x43adde52c6c142912662d3e427709db5cac9b811"
+            }
+        },
+        "a16z": {
+            "twitter": " ",
+            "info": " VC fund",
+            "wallets": {
+                "erc": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
+                "bsc": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
+                "poly": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
+                "avax": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
+                "heco": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
+                "ftm": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
+                "optm": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
+                "arb": "0x66b870ddf78c975af5cd8edc6de25eca81791de1"
+            }
+        },
+        "etherum_nickname": {
+            "twitter": " ",
+            "info": "#1 followers on debank.com",
+            "wallets": {
+                "erc": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "bsc": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "poly": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "avax": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "heco": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "ftm": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "optm": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "arb": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "gns": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                "aur": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50"
+            }
+        },
+        "@Amelisa.eth": {
+            "twitter": " ",
+            "info": "small anon whale, sharp alt plays",
+            "ens": "amelisa.eth",
+            "wallets": {
+                "erc": "0x3c9002cdb61c56b89467d94a2d93235dfd698089",
+                "bsc": "0x3c9002cdb61c56b89467d94a2d93235dfd698089",
+                "poly": "0x3c9002cdb61c56b89467d94a2d93235dfd698089",
+                "avax": "0x3c9002cdb61c56b89467d94a2d93235dfd698089",
+                "ftm": "0x3c9002cdb61c56b89467d94a2d93235dfd698089",
+                "optm": "0x3c9002cdb61c56b89467d94a2d93235dfd698089",
+                "arb": "0x3c9002cdb61c56b89467d94a2d93235dfd698089"
+            }
+        },
+        "tetranode": {
+            "twitter": " ",
+            "info": " ",
+            "ens": " ",
+            "wallets": {
+                "erc": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
+                "bsc": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
+                "poly": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
+                "heco": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
+                "ftm": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
+                "optm": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
+                "arb": "0x9c5083dd4838e120dbeac44c052179692aa5dac5"
+            }
+        },
+        "alt_degen": {
+            "twitter": " ",
+            "info": "smaller alt degen play wallet, name is made up",
+            "ens": " ",
+            "wallets": {
+                "erc": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
+                "bsc": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
+                "poly": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
+                "heco": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
+                "ftm": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
+                "avax": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
+                "arb": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726"
+            }
+        },
+        "@obvio.eth": {
+            "twitter": " ",
+            "info": "whale on eth",
+            "ens": "obvio.eth",
+            "wallets": {
+                "erc": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
+                "bsc": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
+                "poly": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
+                "heco": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
+                "ftm": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
+                "avax": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
+                "arb": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5"
+            }
+        },
+        "@wed.eth": {
+            "twitter": " ",
+            "info": "nft (eth) trader",
+            "ens": "wed.eth",
+            "wallets": {
+                "erc": "0xAB6cA2017548A170699890214bFd66583A0C1754",
+                "bsc": "0xAB6cA2017548A170699890214bFd66583A0C1754",
+                "poly": "0xAB6cA2017548A170699890214bFd66583A0C1754",
+                "heco": "0xAB6cA2017548A170699890214bFd66583A0C1754",
+                "avax": "0xAB6cA2017548A170699890214bFd66583A0C1754"
+            }
+        },
+        "ftm_whale": {
+            "twitter": " ",
+            "info": "whale on fantom",
+            "ens": "",
+            "wallets": {
+                "erc": "0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3",
+                "ftm": "0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3"
+               
+            }
+        },
+        "parafi": {
+            "twitter": " ",
+            "info": "fund",
+            "ens": "",
+            "wallets": {
+                "erc": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363",
+                "heco": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363",
+                "avax": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363"
+            }
+        },
+
+            "gmx_degen": {
+                "twitter": " ",
+                "info": "degen who was early in gmx, active small cap investor",
+                "ens": "",
+                "wallets": {
+                    "erc": "0x1e7127c81c8a58661a0811f026b6be66533934be"
+                }
+            }
+        },
+
+                "spl_wallets": {
+                    "@Cyrii": {
+                        "twitter": "https://twitter.com/cyrii_MM",
+                        "info": "$COPE - main dev/founder, main holder, cult",
+                        "wallets": {
+                            "spl": "13pHDZsFyuTJ9uMA8SbY8vjBs5TmZ3jJeiCwvEyax4tu"
+                        }
+                    }
+                }
+            }
