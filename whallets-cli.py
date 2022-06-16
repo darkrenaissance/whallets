@@ -8,7 +8,7 @@
 import json
 import texts_cli as tc
 
-def cli():
+def cli_main():
     """Main program for the cli"""
     print(tc.welcome_message())
 
@@ -19,21 +19,33 @@ def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
     chain = input(tc._choose_chain())
     name = input(tc._prompt_name())
-    address = input(tc._prompt_address())
+    addr = input(tc._prompt_address())
+    inf = input(tc._prompt_info())
     twtr = input(tc._prompt_twitter())
     ens = input(tc._prompt_ens())
-    check_wallet(chain)
+    check_wallet(chain, name, addr, inf, twtr, ens)
 
 
 
-def check_wallet(chain):
+def check_wallet(chain, name, addr, twtr, ens):
     """
     Scans through wallets to check if a new wallet is not already in the
     database"
     """
     i = _chain_index(chain)
     dict = get_wallets()[i]
-    wallets = dict
+    for key, value in dict.items():
+        user = key
+        wallets = value['wallets']
+        for key
+        info = value['info']
+        twitter = value['twitter']
+        if user == name:
+            return 0
+        elif addr in wallets.values():
+            return 1
+        elif
+
 
 
 def get_wallets():
