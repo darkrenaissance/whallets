@@ -17,17 +17,21 @@ def main_menu():
 
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
+    chain, name, addr, inf, twtr, ens = _get_inputs()
+    check_wallet(chain, name, addr, inf, twtr, ens)
+
+def _get_inputs():
+    """Get infor to add a new wallet"""
     chain = input(tc._choose_chain())
     name = input(tc._prompt_name())
     addr = input(tc._prompt_address())
     inf = input(tc._prompt_info())
     twtr = input(tc._prompt_twitter())
     ens = input(tc._prompt_ens())
-    check_wallet(chain, name, addr, inf, twtr, ens)
+    return chain, name, addr, inf, twtr, ens
 
 
-
-def check_wallet(chain, name, addr, twtr, ens):
+def check_wallet(chain, name, addr, inf, twtr, ens):
     """
     Scans through wallets to check if a new wallet is not already in the
     database"
@@ -37,14 +41,21 @@ def check_wallet(chain, name, addr, twtr, ens):
     for key, value in dict.items():
         user = key
         wallets = value['wallets']
-        for key
         info = value['info']
         twitter = value['twitter']
+        ens_saved = value['ens']
         if user == name:
             return 0
         elif addr in wallets.values():
             return 1
-        elif
+        elif inf == info:
+            return 2
+        elif twtr == twitter:
+            return 3
+        elif ens == ens_saved:
+            return 4
+        else:
+            return 5
 
 
 
