@@ -17,6 +17,19 @@ def main_menu():
 
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
+    chain = input(tc._choose_chain())
+    name = input(tc._prompt_name())
+    address = input(tc._prompt_address())
+    twtr = input(tc._prompt_twitter())
+    ens = input(tc._prompt_ens())
+
+
+
+def check_wallet():
+    """
+    Scans through wallets to check if a new wallet is not already in the
+    database"
+    """
 
 
 
