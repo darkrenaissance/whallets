@@ -22,16 +22,18 @@ def add_wallet():
     address = input(tc._prompt_address())
     twtr = input(tc._prompt_twitter())
     ens = input(tc._prompt_ens())
+    check_wallet(chain)
 
 
 
-def check_wallet():
+def check_wallet(chain):
     """
     Scans through wallets to check if a new wallet is not already in the
     database"
     """
-
-
+    i = _chain_index(chain)
+    dict = get_wallets()[i]
+    wallets = dict
 
 
 def get_wallets():
@@ -52,6 +54,20 @@ def display_wallets(chain):
     dict = get_wallets()[i]
     print(f"\n\n{chain.upper()} WALLETS:")
 
+    for key, value in dict.items():
+        user = key
+        wallets = value['wallets']
+        info = value['info']
+        twitter = value['twitter']
+        chains = []
+        for key, value in wallets.items():
+            chains.append(key)
+        print(f"\nUser: {user}")
+        print(f"Info: {info}")
+        print(f"Twitter: {twitter}")
+        print(f"Wallet address: {value}")
+        print(f"Active networks: {chains}")
+
 def _chain_index(chain):
     '''Asigns an index based on given parameter of the chain'''
     if chain.lower() == 'evm':
@@ -63,3 +79,5 @@ def _chain_index(chain):
 def display_all_wallets():
     display_wallets('evm')
     display_wallets('spl')
+
+display_all_wallets()
