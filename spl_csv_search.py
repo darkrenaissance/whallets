@@ -6,6 +6,7 @@
 
 import csv
 from datetime import datetime
+from tabulate import tabulate
 
 def get_info():
     """Functiong extractiong info from the downloaded csv file"""
@@ -56,9 +57,16 @@ def display_csv_txs_usdt(min=1000000,max=10000000):
     """Prints all tx's within the range of entered amount"""
 
 
-    _print_header_txs_usdt(min,max)
+    headers = _headers_txs_usdt(min,max)
 
     times, txhashes, amounts, source_owners, dest_owners = get_info()
+
+    table = [
+        headers[0],
+        headers[1],
+        headers[2]
+    ]
+
 
     for index,amount in enumerate(amounts):
         usdt = amount/1000000
@@ -68,22 +76,29 @@ def display_csv_txs_usdt(min=1000000,max=10000000):
         dst_own = dest_owners[i]
         time = times[i]
         if usdt > min and usdt < max:
-            print(\
-                  f"{time} - {txhash} - {src_own} - {dst_own} - {usdt}"
+            item =(f"{time} - ",
+                   f"{txhash} - ",
+                   f"{src_own} - ",
+                   f"{dst_own} - ",
+                   f"{usdt}"
             )
+            table.append(item)
 
-def _print_header_txs_usdt(min,max):
-    "Support function to print the header for tx's in usdt"""
-    print(f"\nTRANSACTIONS BETWEEN {min} and {max} USDT")
-    print("\n=======================================")
-    print(\
-        "\nTIME\t-\t-\t-\t-\t-\t"\
-        "TXHASH"\
-        "\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t"\
-        "SOURCE OWNER\t-\t-\t-\t-\t-\t-\t-\t"\
-        "DESTINATION OWNER\t-\t-\t-\t-\t-\t-\t-\t"\
-        "AMOUNT (USDT)\n"
+    print(tabulate(table))
+
+def _headers_txs_usdt(min,max):
+    """Support function to print the header for tx's in usdt"""
+    header_0 = (f"\nTRANSACTIONS BETWEEN {min} and {max} USDT",)
+    header_1 = ("=======================================",)
+    header_2 = (
+        "TIME",
+        "TXHASH",
+        "SOURCE OWNER",
+        "DESTINATION OWNER",
+        "AMOUNT (USDT)"
     )
+    headers = [header_0,header_1,header_2]
+    return headers
 
 
-display_csv_txs_usdt(10000000,100000000)
+display_csv_txs_usdt(5000,5550)
