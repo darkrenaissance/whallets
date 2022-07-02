@@ -16,7 +16,7 @@ def _main_menu():
     line = ("---","------------------------------",)
     line_1 = ("1 -","Add a wallet to the your list")
     line_2 = ("2 -","Remove a wallet from your list")
-    line_3 = ("3 -","Display the list of wallets")
+    line_3 = ("3 -","Display your wallet list")
     line_4 = ("4 -","Display recent whale TXs on your EVM list")
     line_5 = ("5 -","Display recent whale TXs on your SPL list")
     line_q = ("q -","Quit!")
@@ -29,6 +29,7 @@ def _main_menu():
         line_3,
         line_4,
         line_5,
+        line_q
     ]
     return table
 
