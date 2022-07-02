@@ -1,13 +1,15 @@
 """CLI for users to manage the wallet database and run research functions"""
 #TODO:
-# 1) Interacting with APIs
-# 2) easy adding data to the wallets_dict.json
-# - loop through each info separatedly
+# 1) Learn operating Blockscan APIs
+# 2) Program functions pulling APIs data based on users interaction
+# 3) CLI function to easy add new wallets and other data to the wallets_dict.json
+# - loop through each info separately
 # - ask to re-add info if matches
-# 3) Scanning through APIs based on given parameters
 # 4) Prints options for the user (-h)
 
 import json
+from tabulate import tabulate
+
 import texts_cli as tc
 
 def cli_main():

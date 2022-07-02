@@ -1,4 +1,5 @@
 """A module with all the display info for whallets-cli."""
+from tabulate import tabulate
 
 import whallets_cli as cli
 
@@ -8,6 +9,19 @@ def welcome_message():
         "WELCOME TO WHALLETS CLI"\
         "\n ========================================= \n"
     return msg
+
+def _main_menu():
+    """Displays the CLI main menu"""
+    line_0 = ("**","Enter the number from the menu:")
+    line = ("---","------------------------------",)
+    line_1 = ("1 -","Add a wallet to the the list")
+    
+    line_2 = ("2 -","Display the list of wallets")
+    line_3 = ("3 -","Display recent whale TXs on your list")
+    line_4 = ("
+
+
+    table = []
 
 def _choose_chain():
     msg = \
