@@ -12,13 +12,14 @@ def welcome_message():
 
 def _main_menu():
     """Displays the CLI main menu"""
-    line_0 = ("**","Enter the number from the menu:")
+    line_0 = ("**","Enter a number from the menu:")
     line = ("---","------------------------------",)
     line_1 = ("1 -","Add a wallet to the your list")
     line_2 = ("2 -","Remove a wallet from your list")
     line_3 = ("3 -","Display the list of wallets")
     line_4 = ("4 -","Display recent whale TXs on your EVM list")
     line_5 = ("5 -","Display recent whale TXs on your SPL list")
+    line_q = ("q -","Quit!")
 
     table = [
         line_0,
