@@ -198,15 +198,21 @@
             "info": "whale on eth",
             "ens": "obvio.eth",
             "wallets": {
-                "erc": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
-                "bsc": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
-                "poly": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
-                "heco": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
-                "ftm": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
-                "avax": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
-                "arb": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5"
+                "evm_0": {
+                    "address": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "heco",
+                        "ftm",
+                        "avax",
+                        "arb"
+                    ]
+                }
             }
         },
+                
         "@wed.eth": {
             "twitter": " ",
             "info": "nft (eth) trader",
