@@ -33,7 +33,7 @@
             }
         },
 
-        "@zhusu_3ac_1": {
+        "@zhusu_3ac": {
             "twitter": "https://twitter.com/zhusu",
             "info": "3AC founder, enterpreteur, Deribit, uncommon core",
             "wallets": {
@@ -278,6 +278,33 @@
                     "address": "0x1e7127c81c8a58661a0811f026b6be66533934be",
                     "networks": [
                         "erc"
+                    ]
+                }
+            }
+        },
+        "<template_name_wallet>": {
+            "twitter": "https://twitter.com/<full_address>",
+            "info": "<info>",
+            "wallets": {
+                "evm_0": {
+                    "address": "<paste 0x... address>",
+                    "networks": [
+                        "erc",
+                        "<paste all the networks>
+
+                    ]
+                },
+                "<evm_1: in case another wallet of the same user>": {
+                    "address": "<0x...>",
+                    "networks": [
+                        "<...>",
+                        "<...>",
+                    ]
+                },
+                "<evm_2: in case of another wallet of the same user>": {
+                    "address": "<0x...>",
+                    "networks": [
+                        "<..>"
                     ]
                 }
             }
