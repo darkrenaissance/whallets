@@ -158,15 +158,21 @@
             "info": " ",
             "ens": " ",
             "wallets": {
-                "erc": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
-                "bsc": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
-                "poly": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
-                "heco": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
-                "ftm": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
-                "optm": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
-                "arb": "0x9c5083dd4838e120dbeac44c052179692aa5dac5"
+                "evm_0": {
+                    "address": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "heco",
+                        "ftm",
+                        "optm",
+                        "arb"
+                    ]
+                }
             }
         },
+
         "alt_degen": {
             "twitter": " ",
             "info": "smaller alt degen play wallet, name is made up",
