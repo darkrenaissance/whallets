@@ -290,7 +290,7 @@
                     "address": "<paste 0x... address>",
                     "networks": [
                         "erc",
-                        "<paste all the networks>
+                        "<paste all the networks>"
 
                     ]
                 },
