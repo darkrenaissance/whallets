@@ -212,19 +212,25 @@
                 }
             }
         },
-                
+
         "@wed.eth": {
             "twitter": " ",
             "info": "nft (eth) trader",
             "ens": "wed.eth",
             "wallets": {
-                "erc": "0xAB6cA2017548A170699890214bFd66583A0C1754",
-                "bsc": "0xAB6cA2017548A170699890214bFd66583A0C1754",
-                "poly": "0xAB6cA2017548A170699890214bFd66583A0C1754",
-                "heco": "0xAB6cA2017548A170699890214bFd66583A0C1754",
-                "avax": "0xAB6cA2017548A170699890214bFd66583A0C1754"
+                "evm_0": {
+                    "address": "0xAB6cA2017548A170699890214bFd66583A0C1754",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "heco",
+                        "avax"
+                    ]
+                }
             }
         },
+
         "ftm_whale": {
             "twitter": " ",
             "info": "whale on fantom",
