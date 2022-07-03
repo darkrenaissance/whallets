@@ -12,8 +12,8 @@ def welcome_message():
 
 def _main_menu():
     """Displays the CLI main menu"""
-    line_0 = ("**","Enter a number from the menu:")
-    line = ("---","------------------------------",)
+    line_0 = ("**","Chose an operation from the menu:")
+    line = ("---","---------------------------------",)
     line_1 = ("1 -","Add a wallet to the your list")
     line_2 = ("2 -","Remove a wallet from your list")
     line_3 = ("3 -","Display your wallet list")
@@ -32,6 +32,23 @@ def _main_menu():
         line_q
     ]
     return table
+
+def _menu_choice():
+    """Sentence asking user for the next step"""
+    msg = "\nEnter number and press Enter:"
+    return msg
+
+def _missing_operation():
+    """Inform about non-existing users choice"""
+    msg = "Sorry, but you had either choosen an unexisting option, "\
+    "or this operation has not been developped yet."
+    return msg
+
+def _ask_new_choice():
+    """Message offering a new choice or quit"""
+    msg = "Do you have another choice?\n1 - YES\n2 - NO (quit)"
+    return msg
+
 
 
 def _choose_chain():

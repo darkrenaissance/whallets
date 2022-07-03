@@ -12,18 +12,59 @@ from tabulate import tabulate
 
 import texts_cli as tc
 
+print(tc.welcome_message())
+
 def cli_main():
     """Main program for the cli"""
-    print(tc.welcome_message())
 
-def main_menu():
-    """main cli options"""
+    while True:
+        print(tabulate(tc._main_menu()))
+        main_menu_choice()
+
+def main_menu_choice():
+    """main cli operations choice"""
+    choice = input(tc._main_menu())
+    if choice == 1:
+        add_wallet()
+    elif choice == 2:
+        remove_wallet()
+    elif choice == 3:
+        display_all_wallets()
+    elif choice == 4:
+        print(tc._missing_operation())
+        _new_choice()
+    elif choice == 5:
+        print(tc._missing_operation())
+        _new_choice()
+    elif choice.lower() == "q":
+        quit()
+    else:
+        _new_choice()
+
+def _new_choice():
+    """Offer user a new choice"""
+
+    x = 1
+    if x < 3:
+        choice = input(tc._ask_new_choice())
+        if choice == 1:
+            cli_main()
+        elif choice == 2:
+            quit()
+        else:
+            x += 1
+    else:
+        quit()
 
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
     chain, name, addr, inf, twtr, ens = _get_inputs()
     msg = tc._check_wallet_result(chain, name, addr, twtr, ens)
     print(msg)
+
+def remove_wallet():
+    """Removes wallet from the wallet dictionary"""
+    # This function needs to be developped
 
 def _get_inputs():
     """Get infor to add a new wallet"""
