@@ -83,17 +83,24 @@ def display_wallets(chain):
 
     for key, value in dict.items():
         user = key
-        wallets = value['wallets']
         info = value['info']
         twitter = value['twitter']
-        chains = []
-        for key, value in wallets.items():
-            chains.append(key)
+        wallets = {}
+        wlts = value['wallets']
+        for x, y in wlts.items():
+            wallets[x] = y
+
+
         print(f"\nUser: {user}")
         print(f"Info: {info}")
         print(f"Twitter: {twitter}")
-        print(f"Wallet address: {value}")
-        print(f"Active networks: {chains}")
+        for wlt,inf in wallets.items():
+            print(f"Wallets: {wlt}")
+            print(f"Address: {inf['address']}")
+            print(f"Active networks:")
+            for network in inf['networks']:
+                print(f"- {network}")
+
 
 def _chain_index(chain):
     '''Asigns an index based on given parameter of the chain'''
