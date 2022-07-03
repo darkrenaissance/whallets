@@ -19,29 +19,29 @@
             "twitter": "https://twitter.com/zhusu",
             "info": "3AC founder, enterpreteur, Deribit, uncommon core",
             "wallets": {
-                "erc": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
-                "bsc": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
-                "poly": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
-                "heco": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
-                "ftm": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
-                "avax": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3"
+                "evm_0": {
+                    "address": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "heco",
+                        "ftm",
+                        "avax"
+                    ]
+                },
+                "evm_1": {
+                    "address": "0x4093fbe60ab50ab79a5bd32fa2adec255372f80e",
+                    "chains": "erc"
+                },
+                "evm_2": {
+                    "address": "0x3ba21b6477f48273f41d241aa3722ffb9e07e247",
+                    "chains": "erc"
+                }
+
             }
         },
-        "@zhusu_3ac_2": {
-            "twitter": "https://twitter.com/zhusu",
-            "info": "3AC founder, enterpreteur, Deribit, uncommon core",
-            "wallets": {
-                "erc": "0x4093fbe60ab50ab79a5bd32fa2adec255372f80e"
-                }
-            },
-
-        "@zhusu_3ac_3": {
-            "twitter": "https://twitter.com/zhusu",
-            "info": "3AC founder, enterpreteur, Deribit, uncommon core",
-            "wallets": {
-                "erc": "0x3ba21b6477f48273f41d241aa3722ffb9e07e247"
-                }
-            },
+        
         "alameda": {
             "twitter": "https://twitter.com/SBF_Alameda",
             "info": "ftx foundation",
