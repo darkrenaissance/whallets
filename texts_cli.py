@@ -1,13 +1,14 @@
 """A module with all the display info for whallets-cli."""
 from tabulate import tabulate
 
-import whallets_cli as cli
+# import whallets_cli as cli
 
-def welcome_message():
+def _welcome_message():
     """welcoming message to the cli"""
     msg = \
+        "\n=========================================\n"\
         "WELCOME TO WHALLETS CLI"\
-        "\n ========================================= \n"
+        "\n========================================="
     return msg
 
 def _main_menu():
@@ -35,7 +36,7 @@ def _main_menu():
 
 def _menu_choice():
     """Sentence asking user for the next step"""
-    msg = "\nEnter number and press Enter:"
+    msg = "\nEnter number and press Enter: "
     return msg
 
 def _missing_operation():
@@ -46,7 +47,9 @@ def _missing_operation():
 
 def _ask_new_choice():
     """Message offering a new choice or quit"""
-    msg = "Do you have another choice?\n1 - YES\n2 - NO (quit)"
+    msg = \
+        "\n\n=========================================\n"\
+        "Do you have another choice?\n1 - YES\n2 - NO (quit)\n"
     return msg
 
 

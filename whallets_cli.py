@@ -9,31 +9,32 @@
 
 import json
 from tabulate import tabulate
-
 import texts_cli as tc
 
-print(tc.welcome_message())
+print(tc._welcome_message())
 
 def cli_main():
     """Main program for the cli"""
 
-    while True:
-        print(tabulate(tc._main_menu()))
-        main_menu_choice()
+
+    print(tabulate(tc._main_menu()))
+    main_menu_choice()
 
 def main_menu_choice():
     """main cli operations choice"""
-    choice = input(tc._main_menu())
-    if choice == 1:
+    choice = input(tc._menu_choice())
+    if choice == '1':
         add_wallet()
-    elif choice == 2:
-        remove_wallet()
-    elif choice == 3:
+
+    elif choice == '2':
+        print(tc._missing_operation())
+
+    elif choice == '3':
         display_all_wallets()
-    elif choice == 4:
+    elif choice == '4':
         print(tc._missing_operation())
         _new_choice()
-    elif choice == 5:
+    elif choice == '5':
         print(tc._missing_operation())
         _new_choice()
     elif choice.lower() == "q":
@@ -41,15 +42,17 @@ def main_menu_choice():
     else:
         _new_choice()
 
+    _new_choice()
+
 def _new_choice():
     """Offer user a new choice"""
 
     x = 1
-    if x < 3:
-        choice = input(tc._ask_new_choice())
-        if choice == 1:
+    while x < 3:
+        chc = input(tc._ask_new_choice())
+        if int(chc) == 1:
             cli_main()
-        elif choice == 2:
+        elif int(chc) == 2:
             quit()
         else:
             x += 1
@@ -155,3 +158,6 @@ def display_all_wallets():
     display_wallets('evm')
     display_wallets('spl')
 
+
+# Run the program
+cli_main()
