@@ -446,11 +446,27 @@
                         "poly",
                         "arb"
                     ]
-                },
-                "<evm_2: in case of another wallet of the same user>": {
-                    "address": "<0x...>",
+                }
+            }
+        },
+
+        "JPEG_wallet": {
+            "twitter": " ",
+            "info": " ",
+            "wallets": {
+                "evm_0": {
+                    "address": "0xb0dafc466871c29662e5cbf4227322c96a8ccbe9",
                     "networks": [
-                        "<..>"
+                        "erc",
+                        "poly",
+                        "avax",
+                        "arb"
+                    ]
+                },
+                "evm_1": {
+                    "address": "0xf52bad5e97658f04b5228d58f428e98f9139d23f",
+                    "networks": [
+                        "erc"
                     ]
                 }
             }
