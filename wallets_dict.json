@@ -330,7 +330,6 @@
                         "optm",
                         "avax",
                         "bsc"
-
                     ]
                 },
                 "<evm_1:": {
@@ -356,7 +355,26 @@
                         "avax",
                         "bsc",
                         "poly"
+                    ]
+                }
+            }
+        },
 
+        "punkify.eth": {
+            "twitter": " ",
+            "info": "whale",
+            "wallets": {
+                "evm_0": {
+                    "address": "0xaf297dec752c909092a117a932a8ca4aaaff9795",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "arb",
+                        "optm",
+                        "poly",
+                        "ftm",
+                        "fuse",
+                        "one"
                     ]
                 }
             }
