@@ -261,16 +261,22 @@
                 }
             }
         },
-                
+
         "gmx_degen": {
             "twitter": " ",
             "info": "degen who was early in gmx, active small cap investor",
             "ens": "",
             "wallets": {
-                "erc": "0x1e7127c81c8a58661a0811f026b6be66533934be"
+                "evm_0": {
+                    "address": "0x1e7127c81c8a58661a0811f026b6be66533934be",
+                    "networks": [
+                        "erc"
+                    ]
+                }
             }
         }
-        },
+
+    },
         "spl_wallets": {
             "@Cyrii": {
                 "twitter": "https://twitter.com/cyrii_MM",
