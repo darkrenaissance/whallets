@@ -236,20 +236,32 @@
             "info": "whale on fantom",
             "ens": "",
             "wallets": {
-                "erc": "0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3",
-                "ftm": "0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3"
+                "evm_0": {
+                    "address": "0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3",
+                    "networks": [
+                        "erc",
+                        "ftm"
+                    ]
+                }
             }
         },
+
         "parafi": {
             "twitter": " ",
             "info": "fund",
             "ens": "",
             "wallets": {
-                "erc": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363",
-                "heco": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363",
-                "avax": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363"
+                 "evm_0": {
+                    "address": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363",
+                    "networks": [
+                        "erc",
+                        "heco",
+                        "avax"
+                    ]
+                }
             }
         },
+                
         "gmx_degen": {
             "twitter": " ",
             "info": "degen who was early in gmx, active small cap investor",
