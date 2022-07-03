@@ -380,6 +380,25 @@
             }
         },
 
+        "analytico.eth": {
+            "twitter": " "
+            "info": "whale",
+            "wallets": {
+                "evm_0": {
+                    "address": "0xa0f75491720835b36edc92d06ddc468d201e9b73",
+                    "networks": [
+                        "erc",
+                        "optm",
+                        "poly",
+                        "avax",
+                        "bsc",
+                        "arb",
+                        "ftm"
+                    ]
+                }
+            }
+        },
+
 
         "<template_name_wallet>": {
             "twitter": "https://twitter.com/<full_address>",
