@@ -388,8 +388,8 @@
         },
 
         "analytico.eth": {
-            "twitter": " "
-            "info": "whale",
+            "twitter": " ",
+            "info": "algo trading firm",
             "wallets": {
                 "evm_0": {
                     "address": "0xa0f75491720835b36edc92d06ddc468d201e9b73",
@@ -416,7 +416,6 @@
                         "erc",
                         "aur",
                         "ftm"
-
                     ]
                 },
                 "<evm_1:": {
