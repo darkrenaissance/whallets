@@ -345,6 +345,23 @@
             }
         },
 
+        "Stani Kulechov": {
+            "twitter": "https://twitter.com/StaniKulechov",
+            "info": "CEO and founder of Aave",
+            "wallets": {
+                "evm_0": {
+                    "address": "0xf5fb27b912d987b5b6e02a1b1be0c1f0740e2c6f",
+                    "networks": [
+                        "erc",
+                        "avax",
+                        "bsc",
+                        "poly"
+
+                    ]
+                }
+            }
+        },
+
 
         "<template_name_wallet>": {
             "twitter": "https://twitter.com/<full_address>",
