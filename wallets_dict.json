@@ -5,16 +5,34 @@
             "info": "ETH foundation, influencer, researcher, cult",
             "ens": "vitalik.eth",
             "wallets": {
-                "erc": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
-                "bsc": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
-                "poly": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
-                "heco": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
-                "ftm": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
-                "optm": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
-                "avax": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
-                "arb": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+                "evm_0": {
+                    "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "heco",
+                        "ftm",
+                        "avax",
+                        "optm",
+                        "arb"
+                    ]
+                },
+                "evm_1": {
+                    "address": "0xc1e42f862d202b4a0ed552c1145735ee088f6ccf",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "ftm",
+                        "avax",
+                        "arb",
+                        "optm"
+                    ]
+                }
             }
         },
+        
         "@zhusu_3ac_1": {
             "twitter": "https://twitter.com/zhusu",
             "info": "3AC founder, enterpreteur, Deribit, uncommon core",
