@@ -268,7 +268,7 @@
                     ]
                 },
 
-                "<evm_1:": {
+                "evm_1:": {
                     "address": "0x59cee32f3ffaeabc0d4991ac7569ebad09e1a7d4",
                     "networks": [
                         "erc"
@@ -339,7 +339,7 @@
                         "bsc"
                     ]
                 },
-                "<evm_1:": {
+                "evm_1:": {
                     "address": "0x0561a78021d8966ddd20c28c6c4318d8675ee1f0",
                     "networks": [
                         "erc",
@@ -418,11 +418,39 @@
                         "ftm"
                     ]
                 },
-                "<evm_1:": {
+                "evm_1:": {
                     "address": "0x39eea0258a5c3e3c5092b2f910371d124592a7fb",
                     "networks": [
                         "erc",
                         "ftm"
+                    ]
+                }
+            }
+        },
+
+        "GMX_wallet": {
+            "twitter": " ",
+            "info": " ",
+            "wallets": {
+                "evm_0": {
+                    "address": "<0x332a4fb9603ecd65f3a4e321e8c10826c46049af",
+                    "networks": [
+                        "arb",
+                        "<erc",
+                        "ftm"
+                    ]
+                },
+                "evm_1": {
+                    "address": "0x5058352e527694a554966154397af9ab79d75461",
+                    "networks": [
+                        "poly",
+                        "arb"
+                    ]
+                },
+                "<evm_2: in case of another wallet of the same user>": {
+                    "address": "<0x...>",
+                    "networks": [
+                        "<..>"
                     ]
                 }
             }
