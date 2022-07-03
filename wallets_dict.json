@@ -178,15 +178,21 @@
             "info": "smaller alt degen play wallet, name is made up",
             "ens": " ",
             "wallets": {
-                "erc": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
-                "bsc": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
-                "poly": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
-                "heco": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
-                "ftm": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
-                "avax": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
-                "arb": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726"
+                "evm_0": {
+                    "address": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "heco",
+                        "ftm",
+                        "avax",
+                        "arb"
+                    ]
+                }
             }
         },
+
         "@obvio.eth": {
             "twitter": " ",
             "info": "whale on eth",
