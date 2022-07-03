@@ -406,6 +406,29 @@
             }
         },
 
+        "XMON_wallet": {
+            "twitter": "https://twitter.com/<full_address>",
+            "info": "xmon investor",
+            "wallets": {
+                "evm_0": {
+                    "address": "0xf6e2c94a609ca303964b65ec991a1a0d2991b961",
+                    "networks": [
+                        "erc",
+                        "aur",
+                        "ftm"
+
+                    ]
+                },
+                "<evm_1:": {
+                    "address": "0x39eea0258a5c3e3c5092b2f910371d124592a7fb",
+                    "networks": [
+                        "erc",
+                        "ftm"
+                    ]
+                }
+            }
+        },
+
 
         "<template_name_wallet>": {
             "twitter": "https://twitter.com/<full_address>",
