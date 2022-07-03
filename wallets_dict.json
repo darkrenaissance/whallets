@@ -306,6 +306,19 @@
             }
         },
 
+        "Arca": {
+            "twitter": " ",
+            "info": "whale",
+            "wallets": {
+                "evm_0": {
+                    "address": "0x23a5efe19aa966388e132077d733672cf5798c03",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+
 
         "<template_name_wallet>": {
             "twitter": "https://twitter.com/<full_address>",
