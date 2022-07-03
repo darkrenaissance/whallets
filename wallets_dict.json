@@ -57,7 +57,7 @@
                 },
                 "evm_1": {
                     "address": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
-                    "chains": [
+                    "networks": [
                         "erc",
                         "bsc",
                         "poly",
@@ -71,49 +71,68 @@
 
             }
         },
-        
+
         "blocktower": {
             "twitter": " ",
             "info": "fund",
             "wallets": {
-                "erc": "0x43adde52c6c142912662d3e427709db5cac9b811",
-                "bsc": "0x43adde52c6c142912662d3e427709db5cac9b811",
-                "poly": "0x43adde52c6c142912662d3e427709db5cac9b811",
-                "avax": "0x43adde52c6c142912662d3e427709db5cac9b811",
-                "heco": "0x43adde52c6c142912662d3e427709db5cac9b811",
-                "ftm": "0x43adde52c6c142912662d3e427709db5cac9b811"
+                "evm_0": {
+                    "address": "0x43adde52c6c142912662d3e427709db5cac9b811",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "avax",
+                        "heco",
+                        "ftm"
+
+                    ]
+                }
             }
         },
+
         "a16z": {
             "twitter": " ",
             "info": " VC fund",
             "wallets": {
-                "erc": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
-                "bsc": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
-                "poly": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
-                "avax": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
-                "heco": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
-                "ftm": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
-                "optm": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
-                "arb": "0x66b870ddf78c975af5cd8edc6de25eca81791de1"
+                 "evm_0": {
+                    "address": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "avax",
+                        "heco",
+                        "ftm",
+                        "optm",
+                        "arb"
+                    ]
+                }
             }
         },
+
         "etherum_nickname": {
             "twitter": " ",
             "info": "#1 followers on debank.com",
             "wallets": {
-                "erc": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "bsc": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "poly": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "avax": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "heco": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "ftm": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "optm": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "arb": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "gns": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
-                "aur": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50"
+                "evm_0": {
+                    "address": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "avax",
+                        "heco",
+                        "ftm",
+                        "optm",
+                        "arb",
+                        "gns",
+                        "aur"
+                    ]
+                }
             }
         },
+
         "@Amelisa.eth": {
             "twitter": " ",
             "info": "small anon whale, sharp alt plays",
