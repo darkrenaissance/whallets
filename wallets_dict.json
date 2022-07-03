@@ -32,16 +32,18 @@
                 },
                 "evm_1": {
                     "address": "0x4093fbe60ab50ab79a5bd32fa2adec255372f80e",
-                    "networks": ["erc"]
+                    "networks": [
+                        "erc"
+                    ]
                 },
                 "evm_2": {
                     "address": "0x3ba21b6477f48273f41d241aa3722ffb9e07e247",
-                    "networks": ["erc"]
+                    "networks": [
+                        "erc"
+                    ]
                 }
-
             }
         },
-
         "alameda": {
             "twitter": "https://twitter.com/SBF_Alameda",
             "info": "ftx foundation",
@@ -66,12 +68,10 @@
                         "ftm",
                         "optm",
                         "arb"
-                        ]
+                    ]
                 }
-
             }
         },
-
         "blocktower": {
             "twitter": " ",
             "info": "fund",
@@ -85,17 +85,15 @@
                         "avax",
                         "heco",
                         "ftm"
-
                     ]
                 }
             }
         },
-
         "a16z": {
             "twitter": " ",
             "info": " VC fund",
             "wallets": {
-                 "evm_0": {
+                "evm_0": {
                     "address": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
                     "networks": [
                         "erc",
@@ -110,7 +108,6 @@
                 }
             }
         },
-
         "etherum_nickname": {
             "twitter": " ",
             "info": "#1 followers on debank.com",
@@ -132,7 +129,6 @@
                 }
             }
         },
-
         "@Amelisa.eth": {
             "twitter": " ",
             "info": "small anon whale, sharp alt plays",
@@ -152,7 +148,6 @@
                 }
             }
         },
-
         "tetranode": {
             "twitter": " ",
             "info": " ",
@@ -172,7 +167,6 @@
                 }
             }
         },
-
         "alt_degen": {
             "twitter": " ",
             "info": "smaller alt degen play wallet, name is made up",
@@ -192,7 +186,6 @@
                 }
             }
         },
-
         "@obvio.eth": {
             "twitter": " ",
             "info": "whale on eth",
@@ -212,7 +205,6 @@
                 }
             }
         },
-
         "@wed.eth": {
             "twitter": " ",
             "info": "nft (eth) trader",
@@ -230,7 +222,6 @@
                 }
             }
         },
-
         "ftm_whale": {
             "twitter": " ",
             "info": "whale on fantom",
@@ -245,13 +236,12 @@
                 }
             }
         },
-
         "parafi": {
             "twitter": " ",
             "info": "fund",
             "ens": "",
             "wallets": {
-                 "evm_0": {
+                "evm_0": {
                     "address": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363",
                     "networks": [
                         "erc",
@@ -261,7 +251,6 @@
                 }
             }
         },
-
         "gmx_degen": {
             "twitter": " ",
             "info": "degen who was early in gmx, active small cap investor",
@@ -275,16 +264,17 @@
                 }
             }
         }
-
     },
-        "spl_wallets": {
-            "@Cyrii": {
-                "twitter": "https://twitter.com/cyrii_MM",
-                "info": "$COPE - main dev/founder, main holder, cult",
-                "wallets": {
-                    "spl": "13pHDZsFyuTJ9uMA8SbY8vjBs5TmZ3jJeiCwvEyax4tu"
+    "spl_wallets": {
+        "@Cyrii": {
+            "twitter": "https://twitter.com/cyrii_MM",
+            "info": "$COPE - main dev/founder, main holder, cult",
+            "wallets": {
+                "spl_0": {
+                    "address": "13pHDZsFyuTJ9uMA8SbY8vjBs5TmZ3jJeiCwvEyax4tu"
                 }
             }
         }
     }
+}
 
