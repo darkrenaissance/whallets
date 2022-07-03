@@ -98,12 +98,12 @@ def display_wallets(chain):
             print(f"Wallets: {wlt}")
             print(f"Address: {inf['address']}")
             print(f"Active networks:")
-            for network in inf['networks']:
-                print(f"- {network}")
-
+            networks = inf['networks']
+            networks_str = ', '.join(networks)
+            print(networks_str)
 
 def _chain_index(chain):
-    '''Asigns an index based on given parameter of the chain'''
+    """Asigns an index based on given parameter of the chain"""
     if chain.lower() == 'evm':
         i = 0
     elif chain.lower() == 'spl':
