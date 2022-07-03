@@ -319,6 +319,32 @@
             }
         },
 
+        "Sigil fund": {
+            "twitter": " ",
+            "info": "gOHM investor",
+            "wallets": {
+                "evm_0": {
+                    "address": "0xe2e4f2a725e42d0f0ef6291f46c430f963482001",
+                    "networks": [
+                        "erc",
+                        "optm",
+                        "avax",
+                        "bsc"
+
+                    ]
+                },
+                "<evm_1:": {
+                    "address": "0x0561a78021d8966ddd20c28c6c4318d8675ee1f0",
+                    "networks": [
+                        "erc",
+                        "arb",
+                        "avax",
+                        "poly"
+                    ]
+                }
+            }
+        },
+
 
         "<template_name_wallet>": {
             "twitter": "https://twitter.com/<full_address>",
