@@ -32,40 +32,46 @@
                 },
                 "evm_1": {
                     "address": "0x4093fbe60ab50ab79a5bd32fa2adec255372f80e",
-                    "chains": "erc"
+                    "networks": ["erc"]
                 },
                 "evm_2": {
                     "address": "0x3ba21b6477f48273f41d241aa3722ffb9e07e247",
-                    "chains": "erc"
+                    "networks": ["erc"]
+                }
+
+            }
+        },
+
+        "alameda": {
+            "twitter": "https://twitter.com/SBF_Alameda",
+            "info": "ftx foundation",
+            "wallets": {
+                "evm_0": {
+                    "address": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "avax"
+                    ]
+                },
+                "evm_1": {
+                    "address": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
+                    "chains": [
+                        "erc",
+                        "bsc",
+                        "poly",
+                        "avax",
+                        "heco",
+                        "ftm",
+                        "optm",
+                        "arb"
+                        ]
                 }
 
             }
         },
         
-        "alameda": {
-            "twitter": "https://twitter.com/SBF_Alameda",
-            "info": "ftx foundation",
-            "wallets": {
-                "erc": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
-                "bsc": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
-                "poly": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
-                "avax": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b"
-            }
-        },
-        "alameda_2": {
-            "twitter": "https://twitter.com/SBF_Alameda",
-            "info": "ftx foundation",
-            "wallets": {
-                "erc": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
-                "bsc": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
-                "poly": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
-                "avax": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
-                "heco": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
-                "ftm": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
-                "optm": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
-                "arb": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83"
-            }
-        },
         "blocktower": {
             "twitter": " ",
             "info": "fund",
