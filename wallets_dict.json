@@ -282,6 +282,31 @@
                 }
             }
         },
+
+        "devmons.eth": {
+            "twitter": " ",
+            "info": "gOHM investor, NFT whale, nansen smart money",
+            "ens": "devmons.eth",
+            "wallets": {
+                "evm_0": {
+                    "address": "0x5efb87c9ff9da9ba445dfef71f0446682352c15d",
+                    "networks": [
+                        "erc",
+                        "bsc",
+                        "gns",
+                        "poly",
+                        "ftm",
+                        "avx",
+                        "arb",
+                        "optm"
+
+                    ]
+
+                }
+            }
+        },
+
+
         "<template_name_wallet>": {
             "twitter": "https://twitter.com/<full_address>",
             "info": "<info>",
@@ -298,7 +323,7 @@
                     "address": "<0x...>",
                     "networks": [
                         "<...>",
-                        "<...>",
+                        "<...>"
                     ]
                 },
                 "<evm_2: in case of another wallet of the same user>": {
