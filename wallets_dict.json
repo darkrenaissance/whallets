@@ -265,13 +265,17 @@
             }
         }
     },
-    "spl_wallets": {
+    "spl_wallets":
+    {
         "@Cyrii": {
             "twitter": "https://twitter.com/cyrii_MM",
             "info": "$COPE - main dev/founder, main holder, cult",
             "wallets": {
                 "spl_0": {
-                    "address": "13pHDZsFyuTJ9uMA8SbY8vjBs5TmZ3jJeiCwvEyax4tu"
+                    "address": "13pHDZsFyuTJ9uMA8SbY8vjBs5TmZ3jJeiCwvEyax4tu",
+                    "networks": [
+                        "spl"
+                    ]
                 }
             }
         }
