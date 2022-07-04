@@ -128,7 +128,7 @@ def check_wallet(ntw_i,name, addr, twtr, ens):
         elif ens == ens_saved:
             x = [4, 'ENS']
         else:
-            x = [5,]
+            x = [5, "none"]
 
     x = x[0]
     y = x[1]

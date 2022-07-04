@@ -97,7 +97,7 @@ def _display_wallet_check_result(y):
         f"{_menu_choice()}"
     msg_1 = \
         f"The new wallet will be saved with already existing info:\n"
-    return msg_0, msg_1
+    return (msg_0, msg_1)
 
 def _enter_new_info(y):
     """Asks user for a correct information"""
