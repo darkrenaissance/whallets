@@ -56,11 +56,12 @@ def _ask_new_choice():
 
 def _choose_network():
     """Gives a choice of networks to work with"""
-    line_0 = ("\nPlease chose the network for the wallet address:",)
+    line_0 = ("**","Please chose the network for the wallet address:")
+    line = ("---", "---------------------------------",)
     line_1 = ("1 -","EVM; Etherum main net and any forks (BSC, Poly..)")
     line_2 = ("2 -","SPL; Solana Program Platform")
     line_3 = ("3 -","BTC; Bitcoin")
-    table = [ line_0, line_1, line_2, line_3]
+    table = [ line_0, line, line_1, line_2, line_3]
     return table
 
 def _prompt_address():
