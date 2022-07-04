@@ -52,7 +52,7 @@ Different whales have wallets on different chains, and to be able to pull form t
 
 
 | **Syntax** | **Chain**            | **Explorer**                      |
-| ------------ | ---------------------- | --------------------------------- |
+|------------|----------------------| --------------------------------- |
 | 'btc'      | Bitcoin              |                                   |
 | 'erc'      | Erc 20 (Etherum)     | [Etherscan](https://etherscan.io) |
 | 'ens'      | Etherum Name service |                                   |
@@ -66,5 +66,7 @@ Different whales have wallets on different chains, and to be able to pull form t
 | 'optm'     | Optimism             |                                   |
 | 'gns'      | Gnosis               |                                   |
 | 'aur'      | Aurora               |                                   |
+| 'one'      | Harmony              |                                   |
+| 'fuse'     | Fuse                 |                                   |
 
 
