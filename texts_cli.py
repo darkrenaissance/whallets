@@ -1,7 +1,7 @@
 """A module with all the display info for whallets-cli."""
 from tabulate import tabulate
 
-# import whallets_cli as cli
+import whallets_cli as cli
 
 def _welcome_message():
     """welcoming message to the cli"""
@@ -89,13 +89,18 @@ def _prompt_ens():
     msg = "\nEnter user's ENS:\n"
     return msg
 
-def _check_wallet_result(chain, name, addr, twtr, ens):
-    """Messages informing about existing wallet"""
-    ix = cli.check_wallet(chain, name, addr, twtr, ens)
-    if ix < 4:
-        items = ['name','address','twitter','ens']
-        item = items[ix]
-        msg = f"This {item} is already saved in the databse."
-    else:
-        msg = "New wallet was saved."
+
+def _display_wallet_check_result(y):
+    """displays answer based on added data"""
+    msg_0 = \
+        f"{x.title()} already exists in your wallet dictionary."\
+        f"\nDo you want to continue?\n1 - YES\n2 - NO (change the item)"\
+        f"{_menu_choice()}"
+    msg_1 = \
+        f"The new wallet will be saved with already existing info:\n"
+    return msg_0, msg_1
+
+def _enter_new_info(y):
+    """Asks user for a correct information"""
+    msg = f"\nPlease write a correct {y}:\n\n"
     return msg

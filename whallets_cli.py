@@ -61,9 +61,23 @@ def _new_choice():
 
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
-    chain, name, addr, inf, twtr, ens = _get_inputs()
-    msg = tc._check_wallet_result(chain, name, addr, twtr, ens)
-    print(msg)
+    ntw_i, name, addr, inf, twtr, ens = _get_inputs()
+    x = check_wallet(ntw_i, name, addr, twtr, ens)
+    if x[0] != 4:
+        y = x[1]
+        new_item = _correct_item(y)
+
+
+def _correct_item(y):
+    """Allows user to rewrite an exisitng item in the wallet"""
+    z = (input(tc._display_wallet_check_result(y)[0]))
+    if z =='1':
+        print(tc._display_wallet_check_result(y)[1])
+        return y
+
+    elif z == '2':
+        new_item = input(tc._enter_new_info(y))
+        return new_item
 
 def remove_wallet():
     """Removes wallet from the wallet dictionary"""
@@ -105,13 +119,13 @@ def check_wallet(ntw_i,name, addr, twtr, ens):
         twitter = value['twitter']
         ens_saved = value['ens']
         if user == name:
-            x = 0
+            x = [0,'name']
         elif addr in wallets.values():
-            x = 1
+            x = [1, 'address']
         elif twtr == twitter:
-            x = 2
+            x = [2, 'twitter']
         elif ens == ens_saved:
-            x = 3
+            x = [3, 'ENS']
         else:
             x = 4
         return x
