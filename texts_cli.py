@@ -92,7 +92,7 @@ def _prompt_ens():
 def _display_wallet_check_result(y):
     """displays answer based on added data"""
     msg_0 = \
-        f"{x.title()} already exists in your wallet dictionary."\
+        f"{y.title()} already exists in your wallet dictionary."\
         f"\nDo you want to continue?\n1 - YES\n2 - NO (change the item)"\
         f"{_menu_choice()}"
     msg_1 = \
