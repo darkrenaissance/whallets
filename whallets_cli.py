@@ -71,44 +71,49 @@ def remove_wallet():
 
 def _get_inputs():
     """Get infor to add a new wallet"""
-    ntw = int(input(tabulate(tc._choose_network())))
+    ntw_i = _check_network()
     name = input(tc._prompt_name())
     addr = input(tc._prompt_address())
     inf = input(tc._prompt_info())
     twtr = input(tc._prompt_twitter())
     ens = input(tc._prompt_ens())
-    return ntw, name, addr, inf, twtr, ens
+    return ntw_i, name, addr, inf, twtr, ens
 
-
-def check_wallet(ntw, name, addr, twtr, ens):
-    """
-    Scans through wallets to check if a new wallet is not already in the
-    database
-    """
-
+def _check_network():
+    """Check if the existing network"""
+    ntw = int(input(tabulate(tc._choose_network())))
     i = ntw - 1
     if i != 0:
         print(tc._missing_operation())
         _new_choice()
     else:
-        dict = get_wallets()[i]
-        for key, value in dict.items():
-            user = key
-            wallets = value['wallets']
-            info = value['info']
-            twitter = value['twitter']
-            ens_saved = value['ens']
-            if user == name:
-                x = 0
-            elif addr in wallets.values():
-                x = 1
-            elif twtr == twitter:
-                x = 2
-            elif ens == ens_saved:
-                x = 3
-            else:
-                x = 4
-            return x
+        return i
+
+def check_wallet(ntw_i,name, addr, twtr, ens):
+    """
+    Scans through wallets to check if a new wallet is not already in the
+    database
+    """
+    i = ntw_i
+
+    dict = get_wallets()[i]
+    for key, value in dict.items():
+        user = key
+        wallets = value['wallets']
+        info = value['info']
+        twitter = value['twitter']
+        ens_saved = value['ens']
+        if user == name:
+            x = 0
+        elif addr in wallets.values():
+            x = 1
+        elif twtr == twitter:
+            x = 2
+        elif ens == ens_saved:
+            x = 3
+        else:
+            x = 4
+        return x
 
 
 
