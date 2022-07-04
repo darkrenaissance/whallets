@@ -378,7 +378,7 @@
         "punkify.eth": {
             "twitter": " ",
             "info": "whale",
-            "ens": " ",
+            "ens": "punkify.eth",
             "wallets": {
                 "evm_0": {
                     "address": "0xaf297dec752c909092a117a932a8ca4aaaff9795",
@@ -399,7 +399,7 @@
         "analytico.eth": {
             "twitter": " ",
             "info": "algo trading firm",
-            "ens": " ",
+            "ens": "analytico.eth",
             "wallets": {
                 "evm_0": {
                     "address": "0xa0f75491720835b36edc92d06ddc468d201e9b73",
