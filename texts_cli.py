@@ -1,7 +1,6 @@
 """A module with all the display info for whallets-cli."""
 from tabulate import tabulate
 
-import whallets_cli as cli
 
 def _welcome_message():
     """welcoming message to the cli"""
