@@ -36,6 +36,7 @@
         "@zhusu_3ac": {
             "twitter": "https://twitter.com/zhusu",
             "info": "3AC founder, enterpreteur, Deribit, uncommon core",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
@@ -65,6 +66,7 @@
         "alameda": {
             "twitter": "https://twitter.com/SBF_Alameda",
             "info": "ftx foundation",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
@@ -93,6 +95,7 @@
         "blocktower": {
             "twitter": " ",
             "info": "fund",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0x43adde52c6c142912662d3e427709db5cac9b811",
@@ -110,6 +113,7 @@
         "a16z": {
             "twitter": " ",
             "info": " VC fund",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
@@ -129,6 +133,7 @@
         "etherum_nickname": {
             "twitter": " ",
             "info": "#1 followers on debank.com",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
@@ -316,6 +321,7 @@
         "Arca": {
             "twitter": " ",
             "info": "whale",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0x23a5efe19aa966388e132077d733672cf5798c03",
@@ -329,6 +335,7 @@
         "Sigil fund": {
             "twitter": " ",
             "info": "gOHM investor",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0xe2e4f2a725e42d0f0ef6291f46c430f963482001",
@@ -354,6 +361,7 @@
         "Stani Kulechov": {
             "twitter": "https://twitter.com/StaniKulechov",
             "info": "CEO and founder of Aave",
+            "ens": " " ,
             "wallets": {
                 "evm_0": {
                     "address": "0xf5fb27b912d987b5b6e02a1b1be0c1f0740e2c6f",
@@ -370,6 +378,7 @@
         "punkify.eth": {
             "twitter": " ",
             "info": "whale",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0xaf297dec752c909092a117a932a8ca4aaaff9795",
@@ -390,6 +399,7 @@
         "analytico.eth": {
             "twitter": " ",
             "info": "algo trading firm",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0xa0f75491720835b36edc92d06ddc468d201e9b73",
@@ -409,6 +419,7 @@
         "XMON_wallet": {
             "twitter": "https://twitter.com/<full_address>",
             "info": "xmon investor",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0xf6e2c94a609ca303964b65ec991a1a0d2991b961",
@@ -431,6 +442,7 @@
         "GMX_wallet": {
             "twitter": " ",
             "info": " ",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "<0x332a4fb9603ecd65f3a4e321e8c10826c46049af",
@@ -453,6 +465,7 @@
         "JPEG_wallet": {
             "twitter": " ",
             "info": " ",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "0xb0dafc466871c29662e5cbf4227322c96a8ccbe9",
@@ -476,6 +489,7 @@
         "<template_name_wallet>": {
             "twitter": "https://twitter.com/<full_address>",
             "info": "<info>",
+            "ens": " ",
             "wallets": {
                 "evm_0": {
                     "address": "<paste 0x... address>",
@@ -506,6 +520,7 @@
         "@Cyrii": {
             "twitter": "https://twitter.com/cyrii_MM",
             "info": "$COPE - main dev/founder, main holder, cult",
+            "ens": " "
             "wallets": {
                 "spl_0": {
                     "address": "13pHDZsFyuTJ9uMA8SbY8vjBs5TmZ3jJeiCwvEyax4tu",

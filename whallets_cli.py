@@ -62,10 +62,11 @@ def _new_choice():
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
     ntw_i, name, addr, inf, twtr, ens = _get_inputs()
-    x = check_wallet(ntw_i, name, addr, twtr, ens)
-    if x[0] != 4:
-        y = x[1]
-        new_item = _correct_item(y)
+    wlt = check_wallet(ntw_i, name, addr, twtr, ens)
+    print(wlt)
+
+
+
 
 
 def _correct_item(y):
@@ -73,7 +74,7 @@ def _correct_item(y):
     z = (input(tc._display_wallet_check_result(y)[0]))
     if z =='1':
         print(tc._display_wallet_check_result(y)[1])
-        return y
+        return True
 
     elif z == '2':
         new_item = input(tc._enter_new_info(y))
@@ -119,16 +120,31 @@ def check_wallet(ntw_i,name, addr, twtr, ens):
         twitter = value['twitter']
         ens_saved = value['ens']
         if user == name:
-            x = [0,'name']
+            x = [1,'name']
         elif addr in wallets.values():
-            x = [1, 'address']
+            x = [2, 'address']
         elif twtr == twitter:
-            x = [2, 'twitter']
+            x = [3, 'twitter']
         elif ens == ens_saved:
-            x = [3, 'ENS']
+            x = [4, 'ENS']
         else:
-            x = 4
-        return x
+            x = [5,]
+
+    x = x[0]
+    y = x[1]
+
+    if x != 5:
+        new_item = _correct_item(y)
+    else:
+        print(tc._display_wallet_check_result(y)[1])
+        new_item = True
+
+    wlt = [ntw_i, name, addr, twtr, ens]
+
+    if new_item != True:
+        wlt[x] = new_item
+
+    return wlt
 
 
 
