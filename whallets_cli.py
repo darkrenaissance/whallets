@@ -5,6 +5,7 @@
 # 3) CLI function to easy add new wallets and other data to the wallets_dict.json
 # - loop through each info separately
 # - ask to re-add info if matches
+# - ask for additional wallets for the same user
 # 4) Prints options for the user (-h)
 
 import json
@@ -62,9 +63,10 @@ def _new_choice():
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
     ntw_i, name, addr, inf, twtr, ens = _get_inputs()
-    wlt = check_wallet(ntw_i, name, addr, twtr, ens)
-    ntw_i, name, addr, twtr, ens = wlt[0], wlt[1], wlt[2], wlt[3], wlt[4]
-    print(tabulate(tc._save_wallet_confirm(ntw_i, name, addr, twtr, ens)))
+    wlt = check_wallet(ntw_i, name, addr, twtr, ens, inf)
+    ntw_i, name, addr, twtr, ens, inf = \
+        wlt[0], wlt[1], wlt[2], wlt[3], wlt[4], wlt[5]
+    print(tabulate(tc._save_wallet_confirm(ntw_i, name, addr, twtr, ens, inf)))
 
 
 
@@ -105,7 +107,7 @@ def _check_network():
     else:
         return i
 
-def check_wallet(ntw_i,name, addr, twtr, ens):
+def check_wallet(ntw_i,name, addr, twtr, ens, inf):
     """
     Scans through wallets to check if a new wallet is not already in the
     database
@@ -139,7 +141,7 @@ def check_wallet(ntw_i,name, addr, twtr, ens):
         print(tc._display_wallet_check_result(y)[1])
         new_item = True
 
-    wlt = [ntw_i, name, addr, twtr, ens]
+    wlt = [ntw_i, name, addr, twtr, ens, inf]
 
     if new_item != True:
         wlt[x] = new_item

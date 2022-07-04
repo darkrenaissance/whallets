@@ -105,7 +105,7 @@ def _enter_new_info(y):
     msg = f"\nPlease write a correct {y}:\n\n"
     return msg
 
-def _save_wallet_confirm(ntw_i, name, addr, twtr, ens):
+def _save_wallet_confirm(ntw_i, name, addr, twtr, ens, inf):
     """print wallet and ask user if to save it"""
     ntw = _return_network(ntw_i)
     line_0 = ("****","This wallet will be saved to your dictionary:")
@@ -115,6 +115,7 @@ def _save_wallet_confirm(ntw_i, name, addr, twtr, ens):
     line_3 = (f"Address:",f"{addr}")
     line_4 = (f"Twitter:",f"{twtr}")
     line_5 = (f"ENS:",f"{ens}")
+    line_6 = (f"Info:", f"{inf}")
     table = [
         line_0,
         line,
@@ -122,14 +123,15 @@ def _save_wallet_confirm(ntw_i, name, addr, twtr, ens):
         line_2,
         line_3,
         line_4,
-        line_5
+        line_5,
+        line_6
         ]
     return table
 
 def _return_network(ntw_i):
     """Return network based on index"""
     if ntw_i == 0:
-        ntw = "Cosmoss/EVM"
+        ntw = "Cosmoss/EVM (ETH and forks)"
     elif ntw_i == 1:
         ntw = "Solana Program Library"
     elif ntw_i == 2:
