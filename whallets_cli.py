@@ -28,7 +28,7 @@ def main_menu_choice():
 
     elif choice == '2':
         print(tc._missing_operation())
-
+        _new_choice()
     elif choice == '3':
         display_all_wallets()
     elif choice == '4':
@@ -50,9 +50,9 @@ def _new_choice():
     x = 1
     while x < 3:
         chc = input(tc._ask_new_choice())
-        if int(chc) == 1:
+        if chc == '1':
             cli_main()
-        elif int(chc) == 2:
+        elif chc == '2':
             quit()
         else:
             x += 1
@@ -71,39 +71,44 @@ def remove_wallet():
 
 def _get_inputs():
     """Get infor to add a new wallet"""
-    chain = int(input(tc._choose_chain()))
+    ntw = int(input(tabulate(tc._choose_network())))
     name = input(tc._prompt_name())
     addr = input(tc._prompt_address())
     inf = input(tc._prompt_info())
     twtr = input(tc._prompt_twitter())
     ens = input(tc._prompt_ens())
-    return chain, name, addr, inf, twtr, ens
+    return ntw, name, addr, inf, twtr, ens
 
 
-def check_wallet(chain, name, addr, twtr, ens):
+def check_wallet(ntw, name, addr, twtr, ens):
     """
     Scans through wallets to check if a new wallet is not already in the
     database
     """
 
-    i = chain - 1
-    dict = get_wallets()[i]
-    for key, value in dict.items():
-        user = key
-        wallets = value['wallets']
-        info = value['info']
-        twitter = value['twitter']
-        ens_saved = value['ens']
-        if user == name:
-            return 0
-        elif addr in wallets.values():
-            return 1
-        elif twtr == twitter:
-            return 2
-        elif ens == ens_saved:
-            return 3
-        else:
-            return 4
+    i = ntw - 1
+    if i != 0:
+        print(tc._missing_operation())
+        _new_choice()
+    else:
+        dict = get_wallets()[i]
+        for key, value in dict.items():
+            user = key
+            wallets = value['wallets']
+            info = value['info']
+            twitter = value['twitter']
+            ens_saved = value['ens']
+            if user == name:
+                x = 0
+            elif addr in wallets.values():
+                x = 1
+            elif twtr == twitter:
+                x = 2
+            elif ens == ens_saved:
+                x = 3
+            else:
+                x = 4
+            return x
 
 
 
@@ -114,7 +119,8 @@ def get_wallets():
         all_wallets = json.load(f)
     evm_wallets = all_wallets['evm_wallets']
     spl_wallets = all_wallets['spl_wallets']
-    return evm_wallets, spl_wallets
+
+    return evm_wallets, spl_wallets,
 
 
 def display_wallets(chain):
