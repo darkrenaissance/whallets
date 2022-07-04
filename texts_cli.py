@@ -96,10 +96,31 @@ def _display_wallet_check_result(y):
         f"\nDo you want to continue?\n1 - YES\n2 - NO (change the item)"\
         f"{_menu_choice()}"
     msg_1 = \
-        f"The new wallet will be saved with already existing info:\n"
+        f"This is your the wallet info:\n"
     return (msg_0, msg_1)
+
 
 def _enter_new_info(y):
     """Asks user for a correct information"""
     msg = f"\nPlease write a correct {y}:\n\n"
     return msg
+
+def _save_wallet_confirm(ntw_i, name, addr, twtr, ens):
+    """print wallet and ask user if to save it"""
+    line_0 = ("****","This wallet will be saved to your dictionary:")
+    line = ("-----","----------------------------------------------")
+    line_1 = (f"Network:",f"{ntw_i}")
+    line_2 = (f"Name:",f"{name}")
+    line_3 = (f"Address:",f"{addr}")
+    line_4 = (f"Twitter:",f"{twtr}")
+    line_5 = (f"ENS:",f"{ens}")
+    table = [
+        line_0,
+        line,
+        line_1,
+        line_2,
+        line_3,
+        line_4,
+        line_5
+        ]
+    return table

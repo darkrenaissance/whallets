@@ -63,8 +63,8 @@ def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
     ntw_i, name, addr, inf, twtr, ens = _get_inputs()
     wlt = check_wallet(ntw_i, name, addr, twtr, ens)
-    print(wlt)
-
+    ntw_i, name, addr, twtr, ens = wlt[0], wlt[1], wlt[2], wlt[3], wlt[4]
+    print(tabulate(tc._save_wallet_confirm(ntw_i, name, addr, twtr, ens)))
 
 
 
@@ -130,8 +130,8 @@ def check_wallet(ntw_i,name, addr, twtr, ens):
         else:
             x = [5, "none"]
 
-    x = x[0]
     y = x[1]
+    x = x[0]
 
     if x != 5:
         new_item = _correct_item(y)
