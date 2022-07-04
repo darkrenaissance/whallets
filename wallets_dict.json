@@ -436,7 +436,7 @@
                     "address": "<0x332a4fb9603ecd65f3a4e321e8c10826c46049af",
                     "networks": [
                         "arb",
-                        "<erc",
+                        "erc",
                         "ftm"
                     ]
                 },
