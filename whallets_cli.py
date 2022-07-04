@@ -81,7 +81,8 @@ def _get_inputs():
 
 def _check_network():
     """Check if the existing network"""
-    ntw = int(input(tabulate(tc._choose_network())))
+    print(tabulate(tc._choose_network()))
+    ntw = int(input(tc._menu_choice()))
     i = ntw - 1
     if i != 0:
         print(tc._missing_operation())
