@@ -79,7 +79,6 @@ def get_inputs():
     ntw_i = _check_network()
     network = tc._return_network(ntw_i)
     new_wallet = {
-            "Network": network,
             "username":" ",
             "twitter address":" ",
             "ENS":" ",
@@ -90,7 +89,7 @@ def get_inputs():
     addresses = []
 
     for item, value in new_wallet.items():
-        x = input(tc._prompt_info(item))
+        x = input(tc._prompt_new_info(item))
         new_item = check_wallet_item(ntw_i,x)
         if item == 'address':
             addresses.append(new_item)
@@ -101,6 +100,8 @@ def get_inputs():
                 y = input(tc._ask_more_wallets()[0])
             new_wallet[item] = addresses
         new_wallet[item] = new_item
+
+    new_wallet["Network"] = network
 
     return new_wallet
 
