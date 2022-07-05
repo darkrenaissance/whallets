@@ -65,14 +65,18 @@ def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
     new_wallet, addresses = get_inputs()
 
-    print(tabulate(tc._save_wallet_confirm(addresses, **new_wallet)))
-    confirm_entry()
+    print(tabulate(tc._save_wallet_confirm(addresses, new_wallet)))
+    confirm_entry(addresses, new_wallet)
 
 
-def confirm_entry():
+def confirm_entry(addresses, new_wallet):
+    """Preview the new wallet and confirm saving it"""
     x = input(tc._confirm_entry()[0])
     if x == '1':
-        save_wallet()
+        # new_wallet_dict = refactor_wallet(addresses, **new_wallet)
+        # save_wallet(**new_wallet_dict)
+        print(tc._confirm_entry()[1])
+
     x = input(tc._confirm_entry()[2])
     if x == '1':
         add_wallet()
@@ -80,10 +84,12 @@ def confirm_entry():
 
 
 
-def save_wallet():
+def save_wallet(**new_wallet_dict):
     """Saves the wallet into the database/dictionary and informs the user"""
-    # SAVE THE WALLET FUNCTION!!!
-    print(tc._confirm_entry()[1])
+
+def refactor_wallet(addresses, **new_wallet):
+    new_wallet = new_wallet
+    adr = list(addresses)
 
 
 

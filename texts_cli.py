@@ -118,14 +118,14 @@ def _enter_new_info(y):
     msg = f"\nPlease write a correct {y}:\n\n"
     return msg
 
-def _save_wallet_confirm(addresses, **new_wallet):
+def _save_wallet_confirm(addresses, new_wallet):
     """print wallet and ask user if to save it"""
     network = new_wallet["Network"]
     username = new_wallet["username"]
     twtr = new_wallet["twitter address"]
     ens = new_wallet["ENS"]
     info = new_wallet["info/note"]
-    addr = list(addresses)
+    # addr = list(addresses)
 
     line_0 = ("****","This wallet will be saved to your dictionary:")
     line = ("-----","----------------------------------------------")
@@ -146,7 +146,7 @@ def _save_wallet_confirm(addresses, **new_wallet):
         line_5,
         ]
 
-    for i, address in enumerate(addr):
+    for i, address in enumerate(addresses):
         line = (f"Address_{i}:", f"{address}")
         table.append(line)
     return table
