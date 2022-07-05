@@ -143,27 +143,24 @@ def check_wallet_item(ntw_i,x):
 
     return new_item
 
-    # else:
-    #     print(tc._display_wallet_check_result(y)[1])
-    #     new_item = True
-    #
-    # wlt = [ntw_i, name, addr, twtr, ens, inf]
-    #
-    # if new_item != True:
-    #     wlt[x] = new_item
-    #
-    # return wlt
-
 def _correct_item(x,z):
     """Allows user to rewrite an exisitng item in the wallet"""
-    a = (input(tc._display_wallet_check_result(z)[0]))
+    a = '2'
+    while a == '2':
+        a = (input(tc._display_wallet_check_result(z)[0]))
 
-    if a == '1':
-        new_item = x
+        if a == '1':
+            new_item = x
 
-    elif a == '2':
-        new_item = input(tc._enter_new_info(z))
-        return new_item
+        elif a == '2':
+            new_item = input(tc._enter_new_info(z))
+            if new_item == x:
+                a = '2'
+            else:
+                new_item = x
+                return new_item
+                break
+
 
 
 def get_wallets():
