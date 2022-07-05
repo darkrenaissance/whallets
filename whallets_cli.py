@@ -64,7 +64,7 @@ def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
     new_wallet = get_inputs()
 
-    print(tabulate(tc._save_wallet_confirm(new_wallet)))
+    print(tabulate(tc._save_wallet_confirm(**new_wallet)))
 
 
 
