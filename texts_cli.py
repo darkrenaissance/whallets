@@ -63,9 +63,17 @@ def _choose_network():
     table = [ line_0, line, line_1, line_2, line_3]
     return table
 
-def _prompt_address():
+def _prompt_new_info(item):
     """Ask or the wallet address"""
-    msg = "\nEnter the wallet address:\n"
+    msg = f"\nEnter the wallet {item}:\n(if unknown press Enter)\n"
+    return msg
+
+def _ask_more_wallets():
+    """ask user if an account has more wallet addresses"""
+    msg = \
+        "\nDo you want to add another wallet to this username?" \
+        "\n1 - YES (add more wallets)\n2 - NO (continue)\n"
+
     return msg
 
 def _prompt_twitter():
@@ -93,10 +101,12 @@ def _display_wallet_check_result(y):
     """displays answer based on added data"""
     msg_0 = \
         f"{y.title()} already exists in your wallet dictionary."\
-        f"\nDo you want to continue?\n1 - YES\n2 - NO (change the item)"\
+        f"\nDo you want to continue?\n1 - YES (keep it duplicate)"\
+        f"\n2 - NO (change the item)"\
         f"{_menu_choice()}"
+
     msg_1 = \
-        f"This is your the wallet info:\n"
+        f"This is your the wallet info:\n(Press Enter to save, 'q' to cancell)"
     return (msg_0, msg_1)
 
 
@@ -127,6 +137,14 @@ def _save_wallet_confirm(ntw_i, name, addr, twtr, ens, inf):
         line_6
         ]
     return table
+
+
+# def _display_wallets(chain, user):
+#     """Text template for table of wallet display function"""
+#     line_0 = ("*****",f"{chain.upper} WALLETS")
+#     line = ("=====================================================",)
+#     line_1 = ("Username:",f"{user}")
+
 
 def _return_network(ntw_i):
     """Return network based on index"""
