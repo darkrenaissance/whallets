@@ -118,17 +118,23 @@ def _enter_new_info(y):
     msg = f"\nPlease write a correct {y}:\n\n"
     return msg
 
-def _save_wallet_confirm(ntw_i, name, addr, twtr, ens, inf):
+def _save_wallet_confirm(**new_wallet):
     """print wallet and ask user if to save it"""
-    ntw = _return_network(ntw_i)
+    network = new_wallet["Network"]
+    username = new_wallet["username"]
+    twtr = new_wallet["twitter address"]
+    ens = new_wallet["ENS"]
+    info = new_wallet["info/note"]
+    address = new_wallet["address"]
+
     line_0 = ("****","This wallet will be saved to your dictionary:")
     line = ("-----","----------------------------------------------")
-    line_1 = (f"Network:",f"{ntw}")
-    line_2 = (f"Name:",f"{name}")
-    line_3 = (f"Address:",f"{addr}")
-    line_4 = (f"Twitter:",f"{twtr}")
-    line_5 = (f"ENS:",f"{ens}")
-    line_6 = (f"Info:", f"{inf}")
+    line_1 = (f"Network:",f"{network}")
+    line_2 = (f"Name:",f"{username}")
+    line_3 = (f"Twitter:",f"{twtr}")
+    line_4 = (f"ENS:",f"{ens}")
+    line_5 = (f"Info:", f"{info}")
+    line_6 = (f"Address:", f"{address}")
     table = [
         line_0,
         line,
