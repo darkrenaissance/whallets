@@ -158,8 +158,9 @@ def _correct_item(x,z):
                 a = '2'
             else:
                 new_item = x
-                return new_item
-                break
+        break
+    return new_item
+    
 
 
 
