@@ -155,11 +155,11 @@ def _confirm_entry():
     """Asks user to confirm the wallet saving or repeat"""
     msg_0 = \
         "\nDo you want to save the wallet to the database?"\
-        "\n1 - YES\n2 - NO"
+        "\n1 - YES\n2 - NO\n"
     msg_1 = "\nThe wallet was saved to your database."
     msg_2 = \
         "\nDo you want to add another wallet?"\
-        "\n1 - YES\n2 - NO"
+        "\n1 - YES\n2 - NO\n"
 
     return msg_0, msg_1, msg_2
 
