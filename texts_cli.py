@@ -118,14 +118,14 @@ def _enter_new_info(y):
     msg = f"\nPlease write a correct {y}:\n\n"
     return msg
 
-def _save_wallet_confirm(**new_wallet):
+def _save_wallet_confirm(addresses, **new_wallet):
     """print wallet and ask user if to save it"""
     network = new_wallet["Network"]
     username = new_wallet["username"]
     twtr = new_wallet["twitter address"]
     ens = new_wallet["ENS"]
     info = new_wallet["info/note"]
-    address = new_wallet["address"]
+    addr = list(addresses)
 
     line_0 = ("****","This wallet will be saved to your dictionary:")
     line = ("-----","----------------------------------------------")
@@ -134,7 +134,8 @@ def _save_wallet_confirm(**new_wallet):
     line_3 = (f"Twitter:",f"{twtr}")
     line_4 = (f"ENS:",f"{ens}")
     line_5 = (f"Info:", f"{info}")
-    line_6 = (f"Address:", f"{address}")
+
+
     table = [
         line_0,
         line,
@@ -143,9 +144,24 @@ def _save_wallet_confirm(**new_wallet):
         line_3,
         line_4,
         line_5,
-        line_6
         ]
+
+    for i, address in enumerate(addr):
+        line = (f"Address_{i}:", f"{address}")
+        table.append(line)
     return table
+
+def _confirm_entry():
+    """Asks user to confirm the wallet saving or repeat"""
+    msg_0 = \
+        "\nDo you want to save the wallet to the database?"\
+        "\n1 - YES\n2 - NO"
+    msg_1 = "\nThe wallet was saved to your database."
+    msg_2 = \
+        "\nDo you want to add another wallet?"\
+        "\n1 - YES\n2 - NO"
+
+    return msg_0, msg_1, msg_2
 
 
 # def _display_wallets(chain, user):

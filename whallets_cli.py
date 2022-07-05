@@ -63,11 +63,27 @@ def _new_choice():
 
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
-    new_wallet = get_inputs()
+    new_wallet, addresses = get_inputs()
 
-    print(tabulate(tc._save_wallet_confirm(**new_wallet)))
+    print(tabulate(tc._save_wallet_confirm(addresses, **new_wallet)))
+    confirm_entry()
 
 
+def confirm_entry():
+    x = input(tc._confirm_entry()[0])
+    if x == '1':
+        save_wallet()
+    x = input(tc._confirm_entry()[2])
+    if x == '1':
+        add_wallet()
+
+
+
+
+def save_wallet():
+    """Saves the wallet into the database/dictionary and informs the user"""
+    # SAVE THE WALLET FUNCTION!!!
+    print(tc._confirm_entry()[1])
 
 
 
@@ -79,15 +95,14 @@ def get_inputs():
     """Get infor to add a new wallet"""
     ntw_i = _check_network()
     network = tc._return_network(ntw_i)
+    addresses = []
     new_wallet = {
             "username":" ",
             "twitter address":" ",
             "ENS":" ",
             "info/note":" ",
-            "address": []
+            "address": addresses
     }
-
-    addresses = []
 
     for item, value in new_wallet.items():
         x = input(tc._prompt_new_info(item))
@@ -99,12 +114,11 @@ def get_inputs():
                 new_item = input(tc._ask_more_wallets()[1])
                 addresses.append(new_item)
                 y = input(tc._ask_more_wallets()[0])
-            new_wallet[item] = addresses
         new_wallet[item] = new_item
 
     new_wallet["Network"] = network
 
-    return new_wallet
+    return new_wallet, addresses
 
 def _check_network():
     """Check if the existing network"""
@@ -160,7 +174,7 @@ def _correct_item(x,z):
                 new_item = x
         break
     return new_item
-    
+
 
 
 
