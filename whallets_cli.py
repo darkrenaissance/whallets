@@ -6,6 +6,7 @@
 # - loop through each info separately
 # - ask to re-add info if matches
 # - ask for additional wallets for the same user
+# - add and print all the added wallets
 # 4) Prints options for the user (-h)
 
 import json
