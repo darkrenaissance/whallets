@@ -70,11 +70,14 @@ def _prompt_new_info(item):
 
 def _ask_more_wallets():
     """ask user if an account has more wallet addresses"""
-    msg = \
+    msg_0 = \
         "\nDo you want to add another wallet to this username?" \
         "\n1 - YES (add more wallets)\n2 - NO (continue)\n"
+    msg_1 = "\nEnter another wallet address:\n"
 
-    return msg
+    return msg_0, msg_1
+
+
 
 def _prompt_twitter():
     """Ask or the wallet address"""

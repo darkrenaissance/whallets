@@ -62,10 +62,8 @@ def _new_choice():
 
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
-    ntw_i, name, addr, inf, twtr, ens = _get_inputs()
-    wlt = check_wallet(ntw_i, name, addr, twtr, ens, inf)
-    ntw_i, name, addr, twtr, ens, inf = \
-        wlt[0], wlt[1], wlt[2], wlt[3], wlt[4], wlt[5]
+    new_wallet = get_inputs()
+    
     print(tabulate(tc._save_wallet_confirm(ntw_i, name, addr, twtr, ens, inf)))
 
 
@@ -74,36 +72,35 @@ def remove_wallet():
     """Removes wallet from the wallet dictionary"""
     # This function needs to be developped
 
-def _get_inputs():
+def get_inputs():
     """Get infor to add a new wallet"""
     ntw_i = _check_network()
-    items_dict = {
+    network = tc._return_network(ntw_i)
+    new_wallet = {
+            "Network": network,
             "username":" ",
             "twitter address":" ",
             "ENS":" ",
             "info/note":" ",
             "address": []
     }
-    wallet = []
-    adresses = []
 
-    for item, value in items_dict:
+    addresses = []
+
+    for item, value in new_wallet.items():
         x = input(tc._prompt_info(item))
         new_item = check_wallet_item(ntw_i,x)
         if item == 'address':
-            x = input(tc._ask_more_wallets())
-            if x == '1':
-                
+            addresses.append(new_item)
+            y = input(tc._ask_more_wallets()[0])
+            while y == '1':
+                new_item = input(tc._ask_more_wallets()[1])
+                addresses.append(new_item)
+                y = input(tc._ask_more_wallets()[0])
+            new_wallet[item] = addresses
+        new_wallet[item] = new_item
 
-        wallet.append(item)
-
-
-    name = input(tc._prompt_name())
-    addr = input(tc._prompt_address())
-    inf = input(tc._prompt_info())
-    twtr = input(tc._prompt_twitter())
-    ens = input(tc._prompt_ens())
-    return ntw_i, name, addr, inf, twtr, ens
+    return new_wallet
 
 def _check_network():
     """Check if the existing network"""
