@@ -77,15 +77,25 @@ def remove_wallet():
 def _get_inputs():
     """Get infor to add a new wallet"""
     ntw_i = _check_network()
-    items_str = ['username','twitter address','ENS','info/note','address']
+    items_dict = {
+            "username":" ",
+            "twitter address":" ",
+            "ENS":" ",
+            "info/note":" ",
+            "address": []
+    }
     wallet = []
     adresses = []
 
-    for i,item in enumerate(items_str):
+    for item, value in items_dict:
         x = input(tc._prompt_info(item))
         new_item = check_wallet_item(ntw_i,x)
         if item == 'address':
-            
+            x = input(tc._ask_more_wallets())
+            if x == '1':
+                
+
+        wallet.append(item)
 
 
     name = input(tc._prompt_name())
