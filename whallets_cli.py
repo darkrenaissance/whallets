@@ -67,7 +67,8 @@ def add_wallet():
 
     print(tabulate(tc._save_wallet_confirm(addresses, new_wallet)))
     confirm_entry(addresses, new_wallet)
-
+    new_wallet_dictionary = refactor_wallet(addresses, new_wallet)
+    save_wallet(new_wallet_dictionary)
 
 def confirm_entry(addresses, new_wallet):
     """Preview the new wallet and confirm saving it"""
@@ -86,8 +87,11 @@ def confirm_entry(addresses, new_wallet):
 
 
 
-def save_wallet(**new_wallet_dict):
+def save_wallet():
     """Saves the wallet into the database/dictionary and informs the user"""
+    new_wallet_dictionary = re
+    evm_wallets, spl_wallets = get_wallets()
+
 
 def refactor_wallet(addresses, new_wallet):
     """Refactor the wallet items to the wallet_dict format"""
@@ -113,9 +117,11 @@ def refactor_wallet(addresses, new_wallet):
                 ]
             }
         }
-        new_wallet_dictionary[username]["wallets"].append(wallet)
+        new_wallet_dictionary[username]["wallets"].update(wallet)
 
     print(f"\n\n\n{new_wallet_dictionary}")
+
+    return new_wallet_dictionary
 
 
 
