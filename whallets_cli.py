@@ -87,9 +87,9 @@ def confirm_entry(addresses, new_wallet):
 
 
 
-def save_wallet():
+def save_wallet(new_wallet_dictionary):
     """Saves the wallet into the database/dictionary and informs the user"""
-    new_wallet_dictionary = re
+
     evm_wallets, spl_wallets = get_wallets()
 
 
