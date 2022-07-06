@@ -89,16 +89,31 @@ def save_wallet(**new_wallet_dict):
 
 def refactor_wallet(addresses, new_wallet):
     """Refactor the wallet items to the wallet_dict format"""
+
+
     new_wallet_dictionary = {new_wallet["username"]: {
-        "twitter": new_wallet["twitter address"]
-        "info": new_wallet["info/note"]
-        "ens":new_wallet["ENS"]
+        "twitter": new_wallet["twitter address"],
+        "info": new_wallet["info/note"],
+        "ens":new_wallet["ENS"],
         "wallets": {
+
+
 
 
         }
 
     }
+
+    for idx, addr in enumerate(addresses):
+        wallet = {f"wallet_{idx}":{
+            "address":f"{addr}",
+            "netw
+
+            }
+          }
+
+
+
 
     # This is the result aiming for:
     # {
