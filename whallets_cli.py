@@ -87,15 +87,49 @@ def confirm_entry(addresses, new_wallet):
 def save_wallet(**new_wallet_dict):
     """Saves the wallet into the database/dictionary and informs the user"""
 
-def refactor_wallet(addresses, **new_wallet):
-    new_wallet = new_wallet
-    adr = list(addresses)
+def refactor_wallet(addresses, new_wallet):
+    """Refactor the wallet items to the wallet_dict format"""
+    new_wallet_dictionary = {new_wallet["username"]: {
+        "twitter": new_wallet["twitter address"]
+        "info": new_wallet["info/note"]
+        "ens":new_wallet["ENS"]
+        "wallets": {
+
+
+        }
+
+    }
+
+    # This is the result aiming for:
+    # {
+    #     "evm_wallets": {
+    #         "@vitalik.eth": {
+    #             "twitter": "https://twitter.com/VitalikButerin",
+    #             "info": "ETH foundation, influencer, researcher, cult",
+    #             "ens": "vitalik.eth",
+    #             "wallets": {
+    #                 "wallet_0": {
+    #                     "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+    #                     "networks": [
+    #                         "erc",
+    #                         "bsc",
+    #                         "poly",
+    #                         "heco",
+    #                         "ftm",
+    #                         "avax",
+    #                         "optm",
+    #                         "arb"
+    #                     ]
+    #                 },
+
+
+
 
 
 
 def remove_wallet():
     """Removes wallet from the wallet dictionary"""
-    # This function needs to be developped
+    # This function needs to be developed
 
 def get_inputs():
     """Get infor to add a new wallet"""
