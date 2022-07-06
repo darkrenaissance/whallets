@@ -40,7 +40,7 @@ def _menu_choice():
 
 def _missing_operation():
     """Inform about non-existing users choice"""
-    msg = "Sorry, but you had either choosen an unexisting option, "\
+    msg = "\nSorry, but you had either choosen an unexisting option, "\
     "or this operation has not been developped yet."
     return msg
 
@@ -71,7 +71,7 @@ def _prompt_new_info(item):
 def _ask_more_wallets():
     """ask user if an account has more wallet addresses"""
     msg_0 = \
-        "\nDo you want to add another wallet to this username?" \
+        "\nDo you want to add another address to this username?" \
         "\n1 - YES (add more wallets)\n2 - NO (continue)\n"
     msg_1 = "\nEnter another wallet address:\n"
 
