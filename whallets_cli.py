@@ -77,6 +77,8 @@ def confirm_entry(addresses, new_wallet):
         # save_wallet(**new_wallet_dict)
         print(tc._confirm_entry()[1])
 
+        refactor_wallet(addresses, new_wallet)
+
     x = input(tc._confirm_entry()[2])
     if x == '1':
         add_wallet()
@@ -89,28 +91,31 @@ def save_wallet(**new_wallet_dict):
 
 def refactor_wallet(addresses, new_wallet):
     """Refactor the wallet items to the wallet_dict format"""
+    username = new_wallet["username"]
+    twtr = new_wallet["twitter address"]
+    ens = new_wallet["ENS"]
+    info = new_wallet["info/note"]
 
-
-    new_wallet_dictionary = {new_wallet["username"]: {
-        "twitter": new_wallet["twitter address"],
-        "info": new_wallet["info/note"],
-        "ens":new_wallet["ENS"],
-        "wallets": {
-
-
-
-
+    new_wallet_dictionary = {username: {
+        "twitter": twtr,
+        "info": info,
+        "ens":ens,
+        "wallets": {}
+            }
         }
-
-    }
 
     for idx, addr in enumerate(addresses):
         wallet = {f"wallet_{idx}":{
             "address":f"{addr}",
-            "netw
-
+            "networks":[
+                "erc"
+                # need to add a code how to add networks
+                ]
             }
-          }
+        }
+        new_wallet_dictionary[username]["wallets"].append(wallet)
+
+    print(f"\n\n\n{new_wallet_dictionary}")
 
 
 
