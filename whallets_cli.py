@@ -90,12 +90,14 @@ def confirm_entry(addresses, new_wallet):
 
 def save_wallet(ntw_i, new_wallet_dictionary):
     """Saves the wallet into the database/dictionary and informs the user"""
-
-    dict = get_wallets()[ntw_i]
-
+   
     filename = 'wallets_dict.json'
+
     with open(filename) as f:
-        f[dict].update(new_wallet_dictionary)
+        all_wallets = json.load(f)
+        dict = all_wallets[ntw_i]
+
+        all_wallets[dict].update(new_wallet_dictionary)
         json.dump(f)
 
 
