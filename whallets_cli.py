@@ -92,10 +92,11 @@ def save_wallet(ntw_i, new_wallet_dictionary):
     """Saves the wallet into the database/dictionary and informs the user"""
 
     dict = get_wallets()[ntw_i]
-    dict.update(new_wallet_dictionary)
+
     filename = 'wallets_dict.json'
     with open(filename) as f:
-        all_wallets = json.load(f)
+        f[dict].update(new_wallet_dictionary)
+        json.dump(f)
 
 
 
