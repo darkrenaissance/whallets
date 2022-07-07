@@ -63,12 +63,13 @@ def _new_choice():
 
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
-    new_wallet, addresses = get_inputs()
+    new_wallet, addresses, ntw_i = get_inputs()
+
 
     print(tabulate(tc._save_wallet_confirm(addresses, new_wallet)))
     confirm_entry(addresses, new_wallet)
     new_wallet_dictionary = refactor_wallet(addresses, new_wallet)
-    save_wallet(new_wallet_dictionary)
+    save_wallet(ntw_i, new_wallet_dictionary)
 
 def confirm_entry(addresses, new_wallet):
     """Preview the new wallet and confirm saving it"""
@@ -87,10 +88,15 @@ def confirm_entry(addresses, new_wallet):
 
 
 
-def save_wallet(new_wallet_dictionary):
+def save_wallet(ntw_i, new_wallet_dictionary):
     """Saves the wallet into the database/dictionary and informs the user"""
 
-    evm_wallets, spl_wallets = get_wallets()
+    dict = get_wallets()[ntw_i]
+    dict.update(new_wallet_dictionary)
+    filename = 'wallets_dict.json'
+    with open(filename) as f:
+        all_wallets = json.load(f)
+
 
 
 def refactor_wallet(addresses, new_wallet):
@@ -118,40 +124,9 @@ def refactor_wallet(addresses, new_wallet):
             }
         }
         new_wallet_dictionary[username]["wallets"].update(wallet)
-
     print(f"\n\n\n{new_wallet_dictionary}")
 
     return new_wallet_dictionary
-
-
-
-
-    # This is the result aiming for:
-    # {
-    #     "evm_wallets": {
-    #         "@vitalik.eth": {
-    #             "twitter": "https://twitter.com/VitalikButerin",
-    #             "info": "ETH foundation, influencer, researcher, cult",
-    #             "ens": "vitalik.eth",
-    #             "wallets": {
-    #                 "wallet_0": {
-    #                     "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
-    #                     "networks": [
-    #                         "erc",
-    #                         "bsc",
-    #                         "poly",
-    #                         "heco",
-    #                         "ftm",
-    #                         "avax",
-    #                         "optm",
-    #                         "arb"
-    #                     ]
-    #                 },
-
-
-
-
-
 
 def remove_wallet():
     """Removes wallet from the wallet dictionary"""
@@ -184,7 +159,7 @@ def get_inputs():
 
     new_wallet["Network"] = network
 
-    return new_wallet, addresses
+    return new_wallet, addresses, ntw_i
 
 def _check_network():
     """Check if the existing network"""
