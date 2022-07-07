@@ -5,7 +5,7 @@
             "info": "ETH foundation, influencer, researcher, cult",
             "ens": "vitalik.eth",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
                     "networks": [
                         "erc",
@@ -18,7 +18,7 @@
                         "arb"
                     ]
                 },
-                "evm_1": {
+                "wallet_1": {
                     "address": "0xc1e42f862d202b4a0ed552c1145735ee088f6ccf",
                     "networks": [
                         "erc",
@@ -38,7 +38,7 @@
             "info": "3AC founder, enterpreteur, Deribit, uncommon core",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x4862733B5FdDFd35f35ea8CCf08F5045e57388B3",
                     "networks": [
                         "erc",
@@ -49,13 +49,13 @@
                         "avax"
                     ]
                 },
-                "evm_1": {
+                "wallet_1": {
                     "address": "0x4093fbe60ab50ab79a5bd32fa2adec255372f80e",
                     "networks": [
                         "erc"
                     ]
                 },
-                "evm_2": {
+                "wallet_2": {
                     "address": "0x3ba21b6477f48273f41d241aa3722ffb9e07e247",
                     "networks": [
                         "erc"
@@ -68,7 +68,7 @@
             "info": "ftx foundation",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xfa34bf9307f2f68a70b4369bb2f522b2b2bb222b",
                     "networks": [
                         "erc",
@@ -77,7 +77,7 @@
                         "avax"
                     ]
                 },
-                "evm_1": {
+                "wallet_1": {
                     "address": "0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83",
                     "networks": [
                         "erc",
@@ -97,7 +97,7 @@
             "info": "fund",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x43adde52c6c142912662d3e427709db5cac9b811",
                     "networks": [
                         "erc",
@@ -115,7 +115,7 @@
             "info": " VC fund",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x66b870ddf78c975af5cd8edc6de25eca81791de1",
                     "networks": [
                         "erc",
@@ -135,7 +135,7 @@
             "info": "#1 followers on debank.com",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
                     "networks": [
                         "erc",
@@ -157,7 +157,7 @@
             "info": "small anon whale, sharp alt plays",
             "ens": "amelisa.eth",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x3c9002cdb61c56b89467d94a2d93235dfd698089",
                     "networks": [
                         "erc",
@@ -176,7 +176,7 @@
             "info": " ",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x9c5083dd4838e120dbeac44c052179692aa5dac5",
                     "networks": [
                         "erc",
@@ -195,7 +195,7 @@
             "info": "smaller alt degen play wallet, name is made up",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
                     "networks": [
                         "erc",
@@ -214,7 +214,7 @@
             "info": "whale on eth",
             "ens": "obvio.eth",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5",
                     "networks": [
                         "erc",
@@ -233,7 +233,7 @@
             "info": "nft (eth) trader",
             "ens": "wed.eth",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xAB6cA2017548A170699890214bFd66583A0C1754",
                     "networks": [
                         "erc",
@@ -250,7 +250,7 @@
             "info": "whale on fantom",
             "ens": "",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3",
                     "networks": [
                         "erc",
@@ -264,7 +264,7 @@
             "info": "fund",
             "ens": "",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363",
                     "networks": [
                         "erc",
@@ -273,7 +273,7 @@
                     ]
                 },
 
-                "evm_1:": {
+                "wallet_1:": {
                     "address": "0x59cee32f3ffaeabc0d4991ac7569ebad09e1a7d4",
                     "networks": [
                         "erc"
@@ -286,7 +286,7 @@
             "info": "degen who was early in gmx, active small cap investor",
             "ens": "",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x1e7127c81c8a58661a0811f026b6be66533934be",
                     "networks": [
                         "erc"
@@ -300,7 +300,7 @@
             "info": "gOHM investor, NFT whale, nansen smart money",
             "ens": "devmons.eth",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x5efb87c9ff9da9ba445dfef71f0446682352c15d",
                     "networks": [
                         "erc",
@@ -323,7 +323,7 @@
             "info": "whale",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0x23a5efe19aa966388e132077d733672cf5798c03",
                     "networks": [
                         "erc"
@@ -337,7 +337,7 @@
             "info": "gOHM investor",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xe2e4f2a725e42d0f0ef6291f46c430f963482001",
                     "networks": [
                         "erc",
@@ -346,7 +346,7 @@
                         "bsc"
                     ]
                 },
-                "evm_1:": {
+                "wallet_1:": {
                     "address": "0x0561a78021d8966ddd20c28c6c4318d8675ee1f0",
                     "networks": [
                         "erc",
@@ -363,7 +363,7 @@
             "info": "CEO and founder of Aave",
             "ens": " " ,
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xf5fb27b912d987b5b6e02a1b1be0c1f0740e2c6f",
                     "networks": [
                         "erc",
@@ -380,7 +380,7 @@
             "info": "whale",
             "ens": "punkify.eth",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xaf297dec752c909092a117a932a8ca4aaaff9795",
                     "networks": [
                         "erc",
@@ -401,7 +401,7 @@
             "info": "algo trading firm",
             "ens": "analytico.eth",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xa0f75491720835b36edc92d06ddc468d201e9b73",
                     "networks": [
                         "erc",
@@ -421,7 +421,7 @@
             "info": "xmon investor",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xf6e2c94a609ca303964b65ec991a1a0d2991b961",
                     "networks": [
                         "erc",
@@ -429,7 +429,7 @@
                         "ftm"
                     ]
                 },
-                "evm_1:": {
+                "wallet_1:": {
                     "address": "0x39eea0258a5c3e3c5092b2f910371d124592a7fb",
                     "networks": [
                         "erc",
@@ -444,7 +444,7 @@
             "info": " ",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "<0x332a4fb9603ecd65f3a4e321e8c10826c46049af",
                     "networks": [
                         "arb",
@@ -452,7 +452,7 @@
                         "ftm"
                     ]
                 },
-                "evm_1": {
+                "wallet_1": {
                     "address": "0x5058352e527694a554966154397af9ab79d75461",
                     "networks": [
                         "poly",
@@ -467,7 +467,7 @@
             "info": " ",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "0xb0dafc466871c29662e5cbf4227322c96a8ccbe9",
                     "networks": [
                         "erc",
@@ -476,7 +476,7 @@
                         "arb"
                     ]
                 },
-                "evm_1": {
+                "wallet_1": {
                     "address": "0xf52bad5e97658f04b5228d58f428e98f9139d23f",
                     "networks": [
                         "erc"
@@ -491,7 +491,7 @@
             "info": "<info>",
             "ens": " ",
             "wallets": {
-                "evm_0": {
+                "wallet_0": {
                     "address": "<paste 0x... address>",
                     "networks": [
                         "erc",
@@ -499,14 +499,14 @@
 
                     ]
                 },
-                "<evm_1: in case another wallet of the same user>": {
+                "<wallet_1: in case another wallet of the same user>": {
                     "address": "<0x...>",
                     "networks": [
                         "<...>",
                         "<...>"
                     ]
                 },
-                "<evm_2: in case of another wallet of the same user>": {
+                "<wallet_2: in case of another wallet of the same user>": {
                     "address": "<0x...>",
                     "networks": [
                         "<..>"

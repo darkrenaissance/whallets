@@ -6,6 +6,7 @@
 # - loop through each info separately
 # - ask to re-add info if matches
 # - ask for additional wallets for the same user
+# - add and print all the added wallets
 # 4) Prints options for the user (-h)
 
 import json
@@ -62,39 +63,106 @@ def _new_choice():
 
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
-    ntw_i, name, addr, inf, twtr, ens = _get_inputs()
-    wlt = check_wallet(ntw_i, name, addr, twtr, ens, inf)
-    ntw_i, name, addr, twtr, ens, inf = \
-        wlt[0], wlt[1], wlt[2], wlt[3], wlt[4], wlt[5]
-    print(tabulate(tc._save_wallet_confirm(ntw_i, name, addr, twtr, ens, inf)))
+    new_wallet, addresses, ntw_i = get_inputs()
+
+
+    print(tabulate(tc._save_wallet_confirm(addresses, new_wallet)))
+    confirm_entry(addresses, new_wallet)
+    new_wallet_dictionary = refactor_wallet(addresses, new_wallet)
+    save_wallet(ntw_i, new_wallet_dictionary)
+
+def confirm_entry(addresses, new_wallet):
+    """Preview the new wallet and confirm saving it"""
+    x = input(tc._confirm_entry()[0])
+    if x == '1':
+        # new_wallet_dict = refactor_wallet(addresses, **new_wallet)
+        # save_wallet(**new_wallet_dict)
+        print(tc._confirm_entry()[1])
+
+        refactor_wallet(addresses, new_wallet)
+
+    x = input(tc._confirm_entry()[2])
+    if x == '1':
+        add_wallet()
 
 
 
 
-def _correct_item(y):
-    """Allows user to rewrite an exisitng item in the wallet"""
-    z = (input(tc._display_wallet_check_result(y)[0]))
-    if z =='1':
-        print(tc._display_wallet_check_result(y)[1])
-        return True
+def save_wallet(ntw_i, new_wallet_dictionary):
+    """Saves the wallet into the database/dictionary and informs the user"""
+   
+    filename = 'wallets_dict.json'
 
-    elif z == '2':
-        new_item = input(tc._enter_new_info(y))
-        return new_item
+    with open(filename) as f:
+        all_wallets = json.load(f)
+        dict = all_wallets[ntw_i]
+
+        all_wallets[dict].update(new_wallet_dictionary)
+        json.dump(f)
+
+
+
+def refactor_wallet(addresses, new_wallet):
+    """Refactor the wallet items to the wallet_dict format"""
+    username = new_wallet["username"]
+    twtr = new_wallet["twitter address"]
+    ens = new_wallet["ENS"]
+    info = new_wallet["info/note"]
+
+    new_wallet_dictionary = {username: {
+        "twitter": twtr,
+        "info": info,
+        "ens":ens,
+        "wallets": {}
+            }
+        }
+
+    for idx, addr in enumerate(addresses):
+        wallet = {f"wallet_{idx}":{
+            "address":f"{addr}",
+            "networks":[
+                "erc"
+                # need to add a code how to add networks
+                ]
+            }
+        }
+        new_wallet_dictionary[username]["wallets"].update(wallet)
+    print(f"\n\n\n{new_wallet_dictionary}")
+
+    return new_wallet_dictionary
 
 def remove_wallet():
     """Removes wallet from the wallet dictionary"""
-    # This function needs to be developped
+    # This function needs to be developed
 
-def _get_inputs():
+def get_inputs():
     """Get infor to add a new wallet"""
     ntw_i = _check_network()
-    name = input(tc._prompt_name())
-    addr = input(tc._prompt_address())
-    inf = input(tc._prompt_info())
-    twtr = input(tc._prompt_twitter())
-    ens = input(tc._prompt_ens())
-    return ntw_i, name, addr, inf, twtr, ens
+    network = tc._return_network(ntw_i)
+    addresses = []
+    new_wallet = {
+            "username":" ",
+            "twitter address":" ",
+            "ENS":" ",
+            "info/note":" ",
+            "address": addresses
+    }
+
+    for item, value in new_wallet.items():
+        x = input(tc._prompt_new_info(item))
+        new_item = check_wallet_item(ntw_i,x)
+        if item == 'address':
+            addresses.append(new_item)
+            y = input(tc._ask_more_wallets()[0])
+            while y == '1':
+                new_item = input(tc._ask_more_wallets()[1])
+                addresses.append(new_item)
+                y = input(tc._ask_more_wallets()[0])
+        new_wallet[item] = new_item
+
+    new_wallet["Network"] = network
+
+    return new_wallet, addresses, ntw_i
 
 def _check_network():
     """Check if the existing network"""
@@ -107,46 +175,50 @@ def _check_network():
     else:
         return i
 
-def check_wallet(ntw_i,name, addr, twtr, ens, inf):
+def check_wallet_item(ntw_i,x):
     """
     Scans through wallets to check if a new wallet is not already in the
     database
     """
-    i = ntw_i
-
-    dict = get_wallets()[i]
+    dict = get_wallets()[ntw_i]
     for key, value in dict.items():
-        user = key
+        username = key
         wallets = value['wallets']
         info = value['info']
         twitter = value['twitter']
         ens_saved = value['ens']
-        if user == name:
-            x = [1,'name']
-        elif addr in wallets.values():
-            x = [2, 'address']
-        elif twtr == twitter:
-            x = [3, 'twitter']
-        elif ens == ens_saved:
-            x = [4, 'ENS']
+
+        if x == username:
+            new_item = _correct_item(x,'username')
+        elif x in wallets.values():
+            new_item = _correct_item(x,'wallet address')
+        elif x == twitter:
+            new_item = _correct_item(x,'twitter address')
+        elif x == ens_saved:
+            new_item = _correct_item(x, 'ENS')
         else:
-            x = [5, "none"]
+            new_item = x
 
-    y = x[1]
-    x = x[0]
+    return new_item
 
-    if x != 5:
-        new_item = _correct_item(y)
-    else:
-        print(tc._display_wallet_check_result(y)[1])
-        new_item = True
+def _correct_item(x,z):
+    """Allows user to rewrite an exisitng item in the wallet"""
+    a = '2'
+    while a == '2':
+        a = (input(tc._display_wallet_check_result(z)[0]))
 
-    wlt = [ntw_i, name, addr, twtr, ens, inf]
+        if a == '1':
+            new_item = x
 
-    if new_item != True:
-        wlt[x] = new_item
+        elif a == '2':
+            new_item = input(tc._enter_new_info(z))
+            if new_item == x:
+                a = '2'
+            else:
+                new_item = x
+        break
+    return new_item
 
-    return wlt
 
 
 
@@ -189,6 +261,9 @@ def display_wallets(chain):
             networks = inf['networks']
             networks_str = ', '.join(networks)
             print(networks_str)
+
+
+
 
 def _chain_index(chain):
     """Asigns an index based on given parameter of the chain"""
