@@ -79,25 +79,25 @@ def _ask_more_wallets():
 
 
 
-def _prompt_twitter():
-    """Ask or the wallet address"""
-    msg = "\nEnter the twitter link (full address):\n"
-    return msg
-
-def _prompt_info():
-    """Ask or the wallet address"""
-    msg = "\nEnter short info about the user:\n"
-    return msg
-
-def _prompt_name():
-    """Ask or the wallet address"""
-    msg = "\nEnter user/wallet name/tag:\n"
-    return msg
-
-def _prompt_ens():
-    """Ask or the wallet address"""
-    msg = "\nEnter user's ENS:\n"
-    return msg
+# def _prompt_twitter():
+#     """Ask or the wallet address"""
+#     msg = "\nEnter the twitter link (full address):\n"
+#     return msg
+#
+# def _prompt_info():
+#     """Ask or the wallet address"""
+#     msg = "\nEnter short info about the user:\n"
+#     return msg
+#
+# def _prompt_name():
+#     """Ask or the wallet address"""
+#     msg = "\nEnter user/wallet name/tag:\n"
+#     return msg
+#
+# def _prompt_ens():
+#     """Ask or the wallet address"""
+#     msg = "\nEnter user's ENS:\n"
+#     return msg
 
 
 def _display_wallet_check_result(z):
