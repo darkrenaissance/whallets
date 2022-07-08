@@ -27,19 +27,38 @@ The wallet dictionary is used to store all the information according to this tem
 This is a simple template to make a database dictionary. Fill all \<*strings*\> with real data.
 
 ```python
-#defi wallets:
+
 {
-	'@<name>':{
-		'twitter':'<full_twitter_address>',
-		'note':'<key info about the wallet owner>',  
-		'ens':'<name.eth>',
-		'wallets':{
-			'erc':'<eth_wallet_address>',
-			'<any_other_chain>':'<corresponding_address>'
-	
-		},
-	},
+        "<template_name_wallet>": {
+            "twitter": "<https://twitter.com/full_address>",
+            "info": "<info>",
+            "ens": "<...> ",
+            "wallets": {
+                "wallet_0": {
+                    "address": "<paste 0x... address>",
+                    "networks": [
+                        "erc",
+                        "<paste all the networks separated by a comma>"
+
+                    ]
+                },
+                "<wallet_1: in case another wallet of the same user>": {
+                    "address": "<0x...>",
+                    "networks": [
+                        "<...>",
+                        "<...>"
+                    ]
+                },
+                "<wallet_2: in case of another wallet of the same user>": {
+                    "address": "<0x...>",
+                    "networks": [
+                        "<..>"
+                    ]
+                }
+            }
+        }
 }
+
 ```
 
 
