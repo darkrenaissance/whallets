@@ -95,10 +95,16 @@ def save_wallet(ntw_i, new_wallet_dictionary):
 
     with open(filename) as f:
         all_wallets = json.load(f)
-        dict = all_wallets[ntw_i]
 
-        all_wallets[dict].update(new_wallet_dictionary)
-        json.dump(f)
+
+        dict_0 = all_wallets['evm_wallets']
+        dict_1 = all_wallets['spl_wallets']
+        dicts = [dict_0,dict_1]
+        dict = dicts[ntw_i]
+
+        dict.update(new_wallet_dictionary)
+        with open(filename, 'w') as f:
+            json.dump(all_wallets,f)
 
 
 
