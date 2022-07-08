@@ -1,15 +1,20 @@
-# getting info from Etherscan API
+# getting info from Etherscan API using etherscan-python or Etherscan api
 
-Resources: 
+## Resources: 
+
 - https://github.com/pcko1/etherscan-python/blob/master/README.md
 - https://www.youtube.com/watch?v=pIOg-f0GBBk
-- https://rattibha.com/thread/1512983745988419588, 
+- https://rattibha.com/thread/1512983745988419588,
+- See example of result of requests: https://github.com/pcko1/etherscan-python/tree/master/logs/standard 
+- https://api.etherscan.io/apis (for .json)
 
+## Free account on Etherscan
 
 - register a free account on etherscan
 - install etherscan-python with: pip install etherscan-python
 - https://github.com/pcko1/etherscan-python/blob/master/README.md
 
+## How to get the information
 The github gives info on how to access the data in categories:
 - accounts:(examples)
 get_normal_txs_by_address(address, startblock, endblock, sort)
@@ -17,6 +22,18 @@ eth.get_erc20_token_transfer_events_by_address(address, startblock, endblock, so
 
 You will get these columns from normal txs:
 ['blockHash', 'blockNumber', 'confirmations', 'contractAddress', 'cumulativeGasUsed', 'from', 'gas', 'gasPrice', 'gasUsed', 'hash', 'input', 'isError', 'nonce', 'timeStamp', 'to', 'transactionIndex', 'txreceipt_status', 'value']
+
+### Balances from multiple addresses
+
+https://api.etherscan.io/api?module=account&action=balancemulti&address=0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a,0x63a9975ba31b0b9626b34300f7f627147df1f526,0x198ef1ec325a96cc354c7266a038be8b5c558f67&tag=latest&apikey=YourApiKeyToken
+
+## Get a list of "ERC20 - Token Transfer Events" by Address
+
+https://api.etherscan.io/api?module=account&action=tokentx&address=0x4e83362442b8d1bec281594cea3050c8eb01311c&startblock=0&endblock=999999999&sort=asc&apikey=YourApiKeyToken
+
+## Get Block Number by Timestamp
+
+https://api.etherscan.io/api?module=block&action=getblocknobytime&timestamp=1578638524&closest=before&apikey=YourApiKeyToken
 
 - On the github there are example of responses returned.
 
@@ -49,8 +66,13 @@ You will get these columns from normal txs:
     	- get_eth_hist_daily_market_cap
     	- get_eth_hist_price
 
+## On the question on decimals
 
-Other resources than Etherscan:
+- https://ethereum.stackexchange.com/questions/19673/decimals-on-erc20-tokens#19703
+
+
+## Other resources than Etherscan:
+
 - Coingecko --> we can create an api and request info
 - Infura: https://infura.io/ --> they have free tier with up to 100 k requests/day
 To use Infura with python, this is an example of code to use in python:
