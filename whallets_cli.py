@@ -285,4 +285,5 @@ def display_all_wallets():
 
 
 # Run the program
-cli_main()
+if __name__ == '__main__':
+    cli_main()
