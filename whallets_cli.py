@@ -178,21 +178,23 @@ def check_wallet_item(ntw_i,x,key,):
     """
     dict = get_wallets()[ntw_i]
 
-    for k,v in dict.items():
+    for a,b in dict.items():
+        for v in b.values():
+
         # username = key
         # wallets = value['wallets']
         # info = value['info']
         # twitter = value['twitter']
         # ens_saved = value['ens']
 
-        if x == "" or x == " ":
-            new_item = x
-        elif x == k:
-            new_item = _correct_item(x, key)
-        elif x == v:
-            new_item = _correct_item(x, key)
-        else:
-            new_item = x
+            if x == "" or x == " ":
+                new_item = x
+            elif x == (a or b or v):
+                new_item = _correct_item(x, key)
+            elif x == v:
+                new_item = _correct_item(x, key)
+            else:
+                new_item = x
 
 
     #
@@ -211,20 +213,14 @@ def check_wallet_item(ntw_i,x,key,):
 
 def _correct_item(x,key):
     """Allows user to rewrite an exisitng item in the wallet"""
-    a = '2'
-    while a == '2':
-        a = (input(tc._display_wallet_check_result(key)[0]))
 
-        if a == '1':
-            new_item = x
+    choice = input(tc._display_wallet_check_result(key)[0])
 
-        elif a == '2':
-            new_item = input(tc._enter_new_info(key))
-            if new_item == x:
-                a = '2'
-            else:
-                new_item = x
-                break
+    if choice == '1':
+        new_item = x
+
+    elif choice == '2':
+        new_item = input(tc._enter_new_info(key))
 
     return new_item
 
