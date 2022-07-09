@@ -483,37 +483,8 @@
                     ]
                 }
             }
-        },
-
-
-        "<template_name_wallet>": {
-            "twitter": "https://twitter.com/<full_address>",
-            "info": "<info>",
-            "ens": " ",
-            "wallets": {
-                "wallet_0": {
-                    "address": "<paste 0x... address>",
-                    "networks": [
-                        "erc",
-                        "<paste all the networks>"
-
-                    ]
-                },
-                "<wallet_1: in case another wallet of the same user>": {
-                    "address": "<0x...>",
-                    "networks": [
-                        "<...>",
-                        "<...>"
-                    ]
-                },
-                "<wallet_2: in case of another wallet of the same user>": {
-                    "address": "<0x...>",
-                    "networks": [
-                        "<..>"
-                    ]
-                }
-            }
         }
+
     },
     "spl_wallets":
     {
