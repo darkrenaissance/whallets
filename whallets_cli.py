@@ -154,17 +154,17 @@ def get_inputs():
             "address": addresses
     }
 
-    for item, value in new_wallet.items():
-        x = input(tc._prompt_new_info(item))
-        new_item = check_wallet_item(ntw_i,x)
-        if item == 'address':
+    for key, value in new_wallet.items():
+        x = input(tc._prompt_new_info(key))
+        new_item = check_wallet_item(ntw_i,x,key,value)
+        if key == 'address':
             addresses.append(new_item)
             y = input(tc._ask_more_wallets()[0])
             while y == '1':
                 new_item = input(tc._ask_more_wallets()[1])
                 addresses.append(new_item)
                 y = input(tc._ask_more_wallets()[0])
-        new_wallet[item] = new_item
+        new_wallet[key] = new_item
 
     new_wallet["Network"] = network
 
@@ -181,48 +181,57 @@ def _check_network():
     else:
         return i
 
-def check_wallet_item(ntw_i,x):
+def check_wallet_item(ntw_i,x,key,value):
     """
     Scans through wallets to check if a new wallet is not already in the
     database
     """
-    dict = get_wallets()[ntw_i]
-    for key, value in dict.items():
-        username = key
-        wallets = value['wallets']
-        info = value['info']
-        twitter = value['twitter']
-        ens_saved = value['ens']
+    # dict = get_wallets()[ntw_i]
 
-        if x == username:
-            new_item = _correct_item(x,'username')
-        elif x in wallets.values():
-            new_item = _correct_item(x,'wallet address')
-        elif x == twitter:
-            new_item = _correct_item(x,'twitter address')
-        elif x == ens_saved:
-            new_item = _correct_item(x, 'ENS')
-        else:
-            new_item = x
+    if x == "" or x == " ":
+        new_item = x
+    elif x == value:
+        new_item = _correct_item(x, key)
+    else:
+        new_item = x
+
+    # for key, value in dict.items():
+    #     username = key
+    #     wallets = value['wallets']
+    #     info = value['info']
+    #     twitter = value['twitter']
+    #     ens_saved = value['ens']
+    #
+    #     if x == username:
+    #         new_item = _correct_item(x,'username')
+    #     elif x in wallets.values():
+    #         new_item = _correct_item(x,'wallet address')
+    #     elif x == twitter:
+    #         new_item = _correct_item(x,'twitter address')
+    #     elif x == ens_saved:
+    #         new_item = _correct_item(x, 'ENS')
+    #     else:
+    #         new_item = x
 
     return new_item
 
-def _correct_item(x,z):
+def _correct_item(x,key):
     """Allows user to rewrite an exisitng item in the wallet"""
     a = '2'
     while a == '2':
-        a = (input(tc._display_wallet_check_result(z)[0]))
+        a = (input(tc._display_wallet_check_result(key)[0]))
 
         if a == '1':
             new_item = x
 
         elif a == '2':
-            new_item = input(tc._enter_new_info(z))
+            new_item = input(tc._enter_new_info(key))
             if new_item == x:
                 a = '2'
             else:
                 new_item = x
-        break
+                break
+
     return new_item
 
 

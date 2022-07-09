@@ -100,10 +100,10 @@ def _ask_more_wallets():
 #     return msg
 
 
-def _display_wallet_check_result(z):
+def _display_wallet_check_result(key):
     """displays answer based on added data"""
     msg_0 = \
-        f"\nThis {z} already exists in your wallet dictionary."\
+        f"\nThis {key} already exists in your wallet dictionary."\
         f"\nDo you want to continue?\n1 - YES (keep it duplicate)"\
         f"\n2 - NO (change the item)"\
         f"{_menu_choice()}"
@@ -113,9 +113,9 @@ def _display_wallet_check_result(z):
     return (msg_0, msg_1)
 
 
-def _enter_new_info(y):
+def _enter_new_info(key):
     """Asks user for a correct information"""
-    msg = f"\nPlease write a correct {y}:\n\n"
+    msg = f"\nPlease write a correct {key}:\n\n"
     return msg
 
 def _save_wallet_confirm(addresses, new_wallet):
