@@ -67,17 +67,19 @@ def add_wallet():
 
 
     print(tabulate(tc._save_wallet_confirm(addresses, new_wallet)))
-    confirm_entry(addresses, new_wallet)
-    new_wallet_dictionary = refactor_wallet(addresses, new_wallet)
-    save_wallet(ntw_i, new_wallet_dictionary)
+    confirm_entry(ntw_i, addresses, new_wallet)
 
-def confirm_entry(addresses, new_wallet):
+
+
+def confirm_entry(ntw_i, addresses, new_wallet):
     """Preview the new wallet and confirm saving it"""
     x = input(tc._confirm_entry()[0])
     if x == '1':
         # new_wallet_dict = refactor_wallet(addresses, **new_wallet)
         # save_wallet(**new_wallet_dict)
         print(tc._confirm_entry()[1])
+        new_wallet_dictionary = refactor_wallet(addresses, new_wallet)
+        save_wallet(ntw_i, new_wallet_dictionary)
 
         refactor_wallet(addresses, new_wallet)
 
