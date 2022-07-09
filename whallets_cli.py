@@ -180,8 +180,24 @@ def check_wallet_item(ntw_i,x,key,):
     """
     dict = get_wallets()[ntw_i]
 
-    for a,b in dict.items():
-        for v in b.values():
+    if x == "" or x == " ":
+        new_item = x
+    else:
+        for a,b in dict.items():
+
+            if x == a or x == b:
+                # print("\n\na or b\n\n")
+                new_item = _correct_item(x, key)
+
+            for v in b.values():
+                if x == v:
+                    # print("\n\nv\n\n")
+                    new_item = _correct_item(x, key)
+                    return new_item
+                else:
+                    new_item = x
+
+    return new_item
 
         # username = key
         # wallets = value['wallets']
@@ -189,14 +205,7 @@ def check_wallet_item(ntw_i,x,key,):
         # twitter = value['twitter']
         # ens_saved = value['ens']
 
-            if x == "" or x == " ":
-                new_item = x
-            elif x == (a or b or v):
-                new_item = _correct_item(x, key)
-            elif x == v:
-                new_item = _correct_item(x, key)
-            else:
-                new_item = x
+
 
 
     #
@@ -211,7 +220,6 @@ def check_wallet_item(ntw_i,x,key,):
     #     else:
     #         new_item = x
 
-    return new_item
 
 def _correct_item(x,key):
     """Allows user to rewrite an exisitng item in the wallet"""
