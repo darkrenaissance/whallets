@@ -156,7 +156,8 @@ def get_inputs():
 
     for key, value in new_wallet.items():
         x = input(tc._prompt_new_info(key))
-        new_item = check_wallet_item(ntw_i,x,key,value)
+        new_item = check_wallet_item(ntw_i, x, key)
+
         if key == 'address':
             addresses.append(new_item)
             y = input(tc._ask_more_wallets()[0])
@@ -170,37 +171,30 @@ def get_inputs():
 
     return new_wallet, addresses, ntw_i
 
-def _check_network():
-    """Check if the existing network"""
-    print(tabulate(tc._choose_network()))
-    ntw = int(input(tc._menu_choice()))
-    i = ntw - 1
-    if i != 0:
-        print(tc._missing_operation())
-        _new_choice()
-    else:
-        return i
-
-def check_wallet_item(ntw_i,x,key,value):
+def check_wallet_item(ntw_i,x,key,):
     """
     Scans through wallets to check if a new wallet is not already in the
     database
     """
-    # dict = get_wallets()[ntw_i]
+    dict = get_wallets()[ntw_i]
 
-    if x == "" or x == " ":
-        new_item = x
-    elif x == value:
-        new_item = _correct_item(x, key)
-    else:
-        new_item = x
+    for k,v in dict.items():
+        # username = key
+        # wallets = value['wallets']
+        # info = value['info']
+        # twitter = value['twitter']
+        # ens_saved = value['ens']
 
-    # for key, value in dict.items():
-    #     username = key
-    #     wallets = value['wallets']
-    #     info = value['info']
-    #     twitter = value['twitter']
-    #     ens_saved = value['ens']
+        if x == "" or x == " ":
+            new_item = x
+        elif x == k:
+            new_item = _correct_item(x, key)
+        elif x == v:
+            new_item = _correct_item(x, key)
+        else:
+            new_item = x
+
+
     #
     #     if x == username:
     #         new_item = _correct_item(x,'username')
@@ -235,7 +229,16 @@ def _correct_item(x,key):
     return new_item
 
 
-
+def _check_network():
+    """Check if the existing network"""
+    print(tabulate(tc._choose_network()))
+    ntw = int(input(tc._menu_choice()))
+    i = ntw - 1
+    if i != 0:
+        print(tc._missing_operation())
+        _new_choice()
+    else:
+        return i
 
 def get_wallets():
     """ Gets the info from the dictionary """
