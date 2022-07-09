@@ -127,8 +127,8 @@ def _save_wallet_confirm(addresses, new_wallet):
     info = new_wallet["info/note"]
     # addr = list(addresses)
 
-    line_0 = ("****","This wallet will be saved to your dictionary:")
-    line = ("-----","----------------------------------------------")
+    line_0 = ("****","Wallet to be saved:")
+    line = ("-----","--------------------")
     line_1 = (f"Network:",f"{network}")
     line_2 = (f"Name:",f"{username}")
     line_3 = (f"Twitter:",f"{twtr}")
