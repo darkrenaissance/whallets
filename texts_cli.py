@@ -164,8 +164,18 @@ def _confirm_entry():
     return msg_0, msg_1, msg_2
 
 
-# def _display_wallets(chain, user):
-#     """Text template for table of wallet display function"""
+def _display_database(i, user, info, twitter,):
+    """Text template for table of wallet display function"""
+    line_0 = ("INDEX","USER","TWITTER","ENS","INFO","ADDRESSES","NETWORKS")
+    line = ("===========","===========","===========","===========",
+            "===========","===========","===========")
+
+
+def _display_wallets(wlt, address, networks):
+    """displays wallets within a given user"""
+
+
+
 #     line_0 = ("*****",f"{chain.upper} WALLETS")
 #     line = ("=====================================================",)
 #     line_1 = ("Username:",f"{user}")

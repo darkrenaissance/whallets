@@ -261,6 +261,7 @@ def display_wallets(chain):
         user = key
         info = value['info']
         twitter = value['twitter']
+        ens = value['ens']
         wallets = {}
         wlts = value['wallets']
         for x, y in wlts.items():
@@ -277,6 +278,11 @@ def display_wallets(chain):
             networks = inf['networks']
             networks_str = ', '.join(networks)
             print(networks_str)
+    #
+    # line_0 = (
+    # "INDEX", "USER", "TWITTER", "ENS", "INFO", "ADDRESSES", "NETWORKS")
+    # line = ("===========", "===========", "===========", "===========",
+    #         "===========", "===========", "===========")
 
 
 
