@@ -7,11 +7,13 @@
 # - ask to re-add info if matches
 # - ask for additional wallets for the same user
 # - add and print all the added wallets
+# - csv export (get away the line row)
 # 4) Prints options for the user (-h)
 
 import json
 from tabulate import tabulate
 import texts_cli as tc
+import csv
 
 print(tc._welcome_message())
 
@@ -326,7 +328,16 @@ def table_format_wallets(chain):
 
     return table
 
-
+def csv_export():
+    table = table_format_wallets('evm')
+    file = 'whales.csv'
+    # with open(file, 'wb') as output:
+    #     new_writer = csv.writer(output)
+    #     new_writer.writerows(table)
+    with open(file, 'w') as output:
+        new_writer = csv.writer(output)
+        for row in table:
+            new_writer.writerow(row)
 
 
 def _chain_index(chain):
