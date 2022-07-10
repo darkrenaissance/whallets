@@ -265,34 +265,34 @@ def display_wallets(chain):
     dict = get_wallets()[i]
     print(f"\n\n{chain.upper()} WALLETS:")
 
-    for key, value in dict.items():
-        user = key
-        info = value['info']
-        twitter = value['twitter']
-        ens = value['ens']
-        wallets = {}
-        wlts = value['wallets']
-        for x, y in wlts.items():
-            wallets[x] = y
-
-
-        print(f"\nUser: {user}")
-        print(f"Info: {info}")
-        print(f"Twitter: {twitter}")
-        for wlt,inf in wallets.items():
-            print(f"Wallets: {wlt}")
-            print(f"Address: {inf['address']}")
-            print(f"Active networks:")
-            networks = inf['networks']
-            networks_str = ', '.join(networks)
-            print(networks_str)
+    # for key, value in dict.items():
+    #     user = key
+    #     info = value['info']
+    #     twitter = value['twitter']
+    #     ens = value['ens']
+    #     wallets = {}
+    #     wlts = value['wallets']
+    #     for x, y in wlts.items():
+    #         wallets[x] = y
+    #
+    #
+    #     print(f"\nUser: {user}")
+    #     print(f"Info: {info}")
+    #     print(f"Twitter: {twitter}")
+    #     for wlt,inf in wallets.items():
+    #         print(f"Wallets: {wlt}")
+    #         print(f"Address: {inf['address']}")
+    #         print(f"Active networks:")
+    #         networks = inf['networks']
+    #         networks_str = ', '.join(networks)
+    #         print(networks_str)
 
     # table = []
     line_0 = [
     "INDEX", "USER", "TWITTER", "ENS", "INFO", "ADDRESSES", "NETWORKS"]
-    line = ["===========", "===========", "===========", "===========",
+    line_ = ["===========", "===========", "===========", "===========",
             "===========", "===========", "==========="]
-    table = [line_0, line,]
+    table = [line_0, line_,]
 
     for key, value in dict.items():
         user = key
@@ -304,16 +304,23 @@ def display_wallets(chain):
         for x, y in wlts.items():
             wallets[x] = y
 
-        line = [
+        line = [user, ens, twitter, info]
 
+        x = 1
         for wlt,inf in wallets.items():
-            print(f"Wallets: {wlt}")
-            print(f"Address: {inf['address']}")
-            print(f"Active networks:")
+            address = inf['address']
             networks = inf['networks']
             networks_str = ', '.join(networks)
+            if x == 1:
+                line.append(address)
+                line.append(networks_str)
+                x += 1
+            else:
+                line = [' ',' ',' ',' ',' ',address,networks_str]
+                x += 1
+            table.append(line)
 
-
+    print(tabulate(table))
 
 
 
