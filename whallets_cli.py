@@ -286,11 +286,34 @@ def display_wallets(chain):
             networks = inf['networks']
             networks_str = ', '.join(networks)
             print(networks_str)
-    #
-    # line_0 = (
-    # "INDEX", "USER", "TWITTER", "ENS", "INFO", "ADDRESSES", "NETWORKS")
-    # line = ("===========", "===========", "===========", "===========",
-    #         "===========", "===========", "===========")
+
+    # table = []
+    line_0 = [
+    "INDEX", "USER", "TWITTER", "ENS", "INFO", "ADDRESSES", "NETWORKS"]
+    line = ["===========", "===========", "===========", "===========",
+            "===========", "===========", "==========="]
+    table = [line_0, line,]
+
+    for key, value in dict.items():
+        user = key
+        info = value['info']
+        twitter = value['twitter']
+        ens = value['ens']
+        wallets = {}
+        wlts = value['wallets']
+        for x, y in wlts.items():
+            wallets[x] = y
+
+        line = [
+
+        for wlt,inf in wallets.items():
+            print(f"Wallets: {wlt}")
+            print(f"Address: {inf['address']}")
+            print(f"Active networks:")
+            networks = inf['networks']
+            networks_str = ', '.join(networks)
+
+
 
 
 
