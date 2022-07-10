@@ -257,8 +257,8 @@ def get_wallets():
     return evm_wallets, spl_wallets,
 
 
-def display_wallets(chain):
-    """Displays the wallets according the given chain"""
+def table_format_wallets(chain):
+    """Format wallets to table"""
     # Chains available 'evm','spl'
     # evm shows all the forks
     i = _chain_index(chain)
@@ -320,11 +320,11 @@ def display_wallets(chain):
                 line.append(networks_str)
                 x += 1
             else:
-                line = [' ',' ',' ',' ',' ',' ',address,networks_str]
+                line = [' ',' ',' ',' ',' ',address,networks_str]
                 x += 1
             table.append(line)
 
-    print(tabulate(table))
+    return table
 
 
 
@@ -336,6 +336,13 @@ def _chain_index(chain):
     elif chain.lower() == 'spl':
         i = 1
     return i
+
+def display_wallets(chain):
+    """Displays the wallets according the given chain"""
+    table = table_format_wallets(chain)
+    print(tabulate(table))
+
+
 
 def display_all_wallets():
     display_wallets('evm')
