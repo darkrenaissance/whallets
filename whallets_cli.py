@@ -289,13 +289,16 @@ def display_wallets(chain):
 
     # table = []
     line_0 = [
-    "INDEX", "USER", "TWITTER", "ENS", "INFO", "ADDRESSES", "NETWORKS"]
+    "INDEX", "USER", "ENS", "TWITTER", "INFO", "ADDRESSES", "NETWORKS"]
     line_ = ["===========", "===========", "===========", "===========",
             "===========", "===========", "==========="]
     table = [line_0, line_,]
 
-    for i, key, value in enumerate(dict.items()):
-        index = i
+
+
+    for i, (key, value) in enumerate(dict.items()):
+
+        index = i + 1
         user = key
         info = value['info']
         twitter = value['twitter']
