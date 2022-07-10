@@ -294,7 +294,8 @@ def display_wallets(chain):
             "===========", "===========", "==========="]
     table = [line_0, line_,]
 
-    for key, value in dict.items():
+    for i, key, value in enumerate(dict.items()):
+        index = i
         user = key
         info = value['info']
         twitter = value['twitter']
@@ -304,7 +305,7 @@ def display_wallets(chain):
         for x, y in wlts.items():
             wallets[x] = y
 
-        line = [user, ens, twitter, info]
+        line = [index, user, ens, twitter, info]
 
         x = 1
         for wlt,inf in wallets.items():
@@ -316,7 +317,7 @@ def display_wallets(chain):
                 line.append(networks_str)
                 x += 1
             else:
-                line = [' ',' ',' ',' ',' ',address,networks_str]
+                line = [' ',' ',' ',' ',' ',' ',address,networks_str]
                 x += 1
             table.append(line)
 
