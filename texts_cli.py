@@ -12,13 +12,14 @@ def _welcome_message():
 
 def _main_menu():
     """Displays the CLI main menu"""
-    line_0 = ("**","Chose an operation from the menu:")
-    line = ("---","---------------------------------",)
-    line_1 = ("1 -","Add a wallet to the your list")
-    line_2 = ("2 -","Remove a wallet from your list")
-    line_3 = ("3 -","Display your wallet list")
-    line_4 = ("4 -","Display recent whale TXs on your EVM list")
-    line_5 = ("5 -","Display recent whale TXs on your SPL list")
+    line_0 = ("**","MAIN MENU:")
+    line = ("---","------------------------")
+    line_1 = ("1 -","Add a wallet")
+    line_2 = ("2 -","Remove a wallet")
+    line_3 = ("3 -","Display wallet database")
+    line_4 = ("4 -","Display whale TXs on your EVM list")
+    line_5 = ("5 -","Display whale TXs on your SPL list")
+    line_6 = ("6 -","Export wallet database to csv")
     line_q = ("q -","Quit!")
 
     table = [
@@ -29,6 +30,7 @@ def _main_menu():
         line_3,
         line_4,
         line_5,
+        line_6,
         line_q
     ]
     return table
