@@ -166,8 +166,8 @@ def _confirm_entry():
 
 def _display_database(i, user, info, twitter,):
     """Text template for table of wallet display function"""
-    line_0 = ("INDEX","USER","TWITTER","ENS","INFO","ADDRESSES","NETWORKS")
-    line = ("===========","===========","===========","===========",
+    line_0 = ("#","USER","TWITTER","ENS","INFO","ADDRESSES","NETWORKS")
+    line = ("==","=======","===========","===========",
             "===========","===========","===========")
 
 
