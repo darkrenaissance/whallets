@@ -8,15 +8,9 @@ Feedback and cooperation/guidance is welcome.
 
 ## Programs
 
-There are few programs to store and develope functions for wallet scannign.
-* wallets.py - has function to display wallets in a quick overview, based on parameters for the given chain.
-  * TODO: 
-    * function to quickly insert a wallet into the dictionary json file
-    * function to display wallets in a table form
+* **whallets_cli.py** - the main CLI to interact with the wallet database
 * spl_scv_search.py - contains function to get transactions within a chosen price range
-  * TODO:
-    * cli program to interact with solscan API to download the data directly
-* evm_scn.py - planned program to interact with etherscan and all the EVM forks APIs, monitoring, downloading and displaying the data according given parameters.
+ 
 
 ## Dictionaries
 
