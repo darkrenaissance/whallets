@@ -173,8 +173,11 @@ def _display_database(i, user, info, twitter,):
             "===========","===========","===========")
 
 
-def _display_wallets(wlt, address, networks):
-    """displays wallets within a given user"""
+def _csv_exported():
+    """displays information about csv stored"""
+    msg = "\nThe wallet database was exported to ~/whallets/data/whallets.csv."
+    return msg
+
 
 
 

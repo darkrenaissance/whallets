@@ -41,6 +41,9 @@ def main_menu_choice():
     elif choice == '5':
         print(tc._missing_operation())
         _new_choice()
+    elif choice == '6':
+        print(tc._missing_operation())
+        _new_choice()
     elif choice.lower() == "q":
         quit()
     else:
@@ -291,8 +294,8 @@ def table_format_wallets(chain):
 
     # table = []
     line_0 = [
-    "INDEX", "USER", "ENS", "TWITTER", "INFO", "ADDRESSES", "NETWORKS"]
-    line_ = ["===========", "===========", "===========", "===========",
+    "#", "USER", "ENS", "TWITTER", "INFO", "ADDRESSES", "NETWORKS"]
+    line_ = ["==", "===========", "===========", "===========",
             "===========", "===========", "==========="]
     table = [line_0, line_,]
 
@@ -330,7 +333,7 @@ def table_format_wallets(chain):
 
 def csv_export():
     table = table_format_wallets('evm')
-    file = 'whales.csv'
+    file = 'data/whallets.csv'
     # with open(file, 'wb') as output:
     #     new_writer = csv.writer(output)
     #     new_writer.writerows(table)
@@ -338,6 +341,7 @@ def csv_export():
         new_writer = csv.writer(output)
         for row in table:
             new_writer.writerow(row)
+    print(tc._csv_exported())
 
 
 def _chain_index(chain):
