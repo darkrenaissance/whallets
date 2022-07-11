@@ -1,6 +1,4 @@
 """A module with all the display info for whallets-cli."""
-from tabulate import tabulate
-
 
 def _welcome_message():
     """welcoming message to the cli"""
@@ -9,6 +7,7 @@ def _welcome_message():
         "WELCOME TO WHALLETS CLI"\
         "\n========================================="
     return msg
+
 
 def _main_menu():
     """Displays the CLI main menu"""
@@ -35,10 +34,12 @@ def _main_menu():
     ]
     return table
 
+
 def _menu_choice():
     """Sentence asking user for the next step"""
     msg = "\nEnter number and press Enter: "
     return msg
+
 
 def _missing_operation():
     """Inform about non-existing users choice"""
@@ -46,13 +47,13 @@ def _missing_operation():
     "or this operation has not been developped yet."
     return msg
 
+
 def _ask_new_choice():
     """Message offering a new choice or quit"""
     msg = \
         "\n\n=========================================\n"\
         "Do you have another choice?\n1 - YES\n2 - NO (quit)\n"
     return msg
-
 
 
 def _choose_network():
@@ -65,10 +66,12 @@ def _choose_network():
     table = [ line_0, line, line_1, line_2, line_3]
     return table
 
+
 def _prompt_new_info(item):
     """Ask or the wallet address"""
     msg = f"\nEnter the wallet {item}:\n(if unknown press Enter)\n"
     return msg
+
 
 def _ask_more_wallets():
     """ask user if an account has more wallet addresses"""
@@ -78,28 +81,6 @@ def _ask_more_wallets():
     msg_1 = "\nEnter another wallet address:\n"
 
     return msg_0, msg_1
-
-
-
-# def _prompt_twitter():
-#     """Ask or the wallet address"""
-#     msg = "\nEnter the twitter link (full address):\n"
-#     return msg
-#
-# def _prompt_info():
-#     """Ask or the wallet address"""
-#     msg = "\nEnter short info about the user:\n"
-#     return msg
-#
-# def _prompt_name():
-#     """Ask or the wallet address"""
-#     msg = "\nEnter user/wallet name/tag:\n"
-#     return msg
-#
-# def _prompt_ens():
-#     """Ask or the wallet address"""
-#     msg = "\nEnter user's ENS:\n"
-#     return msg
 
 
 def _display_wallet_check_result(key):
@@ -166,25 +147,18 @@ def _confirm_entry():
     return msg_0, msg_1, msg_2
 
 
-def _display_database(i, user, info, twitter,):
+def _table_headers():
     """Text template for table of wallet display function"""
-    line_0 = ("#","USER","TWITTER","ENS","INFO","ADDRESSES","NETWORKS")
-    line = ("==","=======","===========","===========",
-            "===========","===========","===========")
-
+    line_0 = [
+        "#", "USER", "ENS", "TWITTER", "INFO", "ADDRESSES", "NETWORKS"]
+    line_ = ["==", "=========", "===========", "===========",
+             "===========", "===========", "==========="]
+    return line_0, line_
 
 def _csv_exported():
     """displays information about csv stored"""
     msg = "\nThe wallet database was exported to ~/whallets/data/whallets.csv."
     return msg
-
-
-
-
-#     line_0 = ("*****",f"{chain.upper} WALLETS")
-#     line = ("=====================================================",)
-#     line_1 = ("Username:",f"{user}")
-
 
 def _return_network(ntw_i):
     """Return network based on index"""

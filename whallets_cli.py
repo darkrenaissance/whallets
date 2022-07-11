@@ -15,14 +15,12 @@ from tabulate import tabulate
 import texts_cli as tc
 import csv
 
-print(tc._welcome_message())
 
 def cli_main():
     """Main program for the cli"""
-
-
     print(tabulate(tc._main_menu()))
     main_menu_choice()
+
 
 def main_menu_choice():
     """main cli operations choice"""
@@ -51,9 +49,9 @@ def main_menu_choice():
 
     _new_choice()
 
+
 def _new_choice():
     """Offer user a new choice"""
-
     x = 1
     while x < 3:
         chc = input(tc._ask_new_choice())
@@ -66,22 +64,18 @@ def _new_choice():
     else:
         quit()
 
+
 def add_wallet():
     """A function to add wallet to the wallets_dict.json"""
     new_wallet, addresses, ntw_i = get_inputs()
-
-
     print(tabulate(tc._save_wallet_confirm(addresses, new_wallet)))
     confirm_entry(ntw_i, addresses, new_wallet)
-
 
 
 def confirm_entry(ntw_i, addresses, new_wallet):
     """Preview the new wallet and confirm saving it"""
     x = input(tc._confirm_entry()[0])
     if x == '1':
-        # new_wallet_dict = refactor_wallet(addresses, **new_wallet)
-        # save_wallet(**new_wallet_dict)
         print(tc._confirm_entry()[1])
         new_wallet_dictionary = refactor_wallet(addresses, new_wallet)
         save_wallet(ntw_i, new_wallet_dictionary)
@@ -93,11 +87,8 @@ def confirm_entry(ntw_i, addresses, new_wallet):
         add_wallet()
 
 
-
-
 def save_wallet(ntw_i, new_wallet_dictionary):
     """Saves the wallet into the database/dictionary and informs the user"""
-   
     filename = 'wallets_dict.json'
 
     with open(filename) as f:
@@ -112,7 +103,6 @@ def save_wallet(ntw_i, new_wallet_dictionary):
     dict.update(new_wallet_dictionary)
     with open(filename, 'w') as f:
         json.dump(all_wallets,f, indent=4)
-
 
 
 def refactor_wallet(addresses, new_wallet):
@@ -135,18 +125,19 @@ def refactor_wallet(addresses, new_wallet):
             "address":f"{addr}",
             "networks":[
                 "erc"
-                # need to add a code how to add networks
+                # need to add a code how to add networks automatically
                 ]
             }
         }
         new_wallet_dictionary[username]["wallets"].update(wallet)
-    # print(f"\n\n\n{new_wallet_dictionary}")
 
     return new_wallet_dictionary
+
 
 def remove_wallet():
     """Removes wallet from the wallet dictionary"""
     # This function needs to be developed
+
 
 def get_inputs():
     """Get infor to add a new wallet"""
@@ -178,6 +169,7 @@ def get_inputs():
 
     return new_wallet, addresses, ntw_i
 
+
 def check_wallet_item(ntw_i,x,key,):
     """
     Scans through wallets to check if a new wallet is not already in the
@@ -204,31 +196,9 @@ def check_wallet_item(ntw_i,x,key,):
 
     return new_item
 
-        # username = key
-        # wallets = value['wallets']
-        # info = value['info']
-        # twitter = value['twitter']
-        # ens_saved = value['ens']
-
-
-
-
-    #
-    #     if x == username:
-    #         new_item = _correct_item(x,'username')
-    #     elif x in wallets.values():
-    #         new_item = _correct_item(x,'wallet address')
-    #     elif x == twitter:
-    #         new_item = _correct_item(x,'twitter address')
-    #     elif x == ens_saved:
-    #         new_item = _correct_item(x, 'ENS')
-    #     else:
-    #         new_item = x
-
 
 def _correct_item(x,key):
     """Allows user to rewrite an exisitng item in the wallet"""
-
     choice = input(tc._display_wallet_check_result(key)[0])
 
     if choice == '1':
@@ -251,6 +221,7 @@ def _check_network():
     else:
         return i
 
+
 def get_wallets():
     """ Gets the info from the dictionary """
     filename = 'wallets_dict.json'
@@ -270,39 +241,10 @@ def table_format_wallets(chain):
     dict = get_wallets()[i]
     print(f"\n\n{chain.upper()} WALLETS:")
 
-    # for key, value in dict.items():
-    #     user = key
-    #     info = value['info']
-    #     twitter = value['twitter']
-    #     ens = value['ens']
-    #     wallets = {}
-    #     wlts = value['wallets']
-    #     for x, y in wlts.items():
-    #         wallets[x] = y
-    #
-    #
-    #     print(f"\nUser: {user}")
-    #     print(f"Info: {info}")
-    #     print(f"Twitter: {twitter}")
-    #     for wlt,inf in wallets.items():
-    #         print(f"Wallets: {wlt}")
-    #         print(f"Address: {inf['address']}")
-    #         print(f"Active networks:")
-    #         networks = inf['networks']
-    #         networks_str = ', '.join(networks)
-    #         print(networks_str)
-
-    # table = []
-    line_0 = [
-    "#", "USER", "ENS", "TWITTER", "INFO", "ADDRESSES", "NETWORKS"]
-    line_ = ["==", "=========", "===========", "===========",
-            "===========", "===========", "==========="]
+    line_0, line_ = tc._table_headers()
     table = [line_0, line_,]
 
-
-
     for i, (key, value) in enumerate(dict.items()):
-
         index = i + 1
         user = key
         info = value['info']
@@ -310,6 +252,7 @@ def table_format_wallets(chain):
         ens = value['ens']
         wallets = {}
         wlts = value['wallets']
+
         for x, y in wlts.items():
             wallets[x] = y
 
@@ -331,9 +274,10 @@ def table_format_wallets(chain):
 
     return table
 
+
 def csv_export():
     """Exports the wallets to csv files"""
-    # Need to add SPL wallets when they are relevant
+    # Need to add SPL & BTC wallet option when relevant
     table = table_format_wallets('evm')
     del table[1]
     file = 'data/whallets.csv'
@@ -352,11 +296,11 @@ def _chain_index(chain):
         i = 1
     return i
 
+
 def display_wallets(chain):
     """Displays the wallets according the given chain"""
     table = table_format_wallets(chain)
     print(tabulate(table))
-
 
 
 def display_all_wallets():
@@ -366,4 +310,5 @@ def display_all_wallets():
 
 # Run the program
 if __name__ == '__main__':
+    print(tc._welcome_message())
     cli_main()
