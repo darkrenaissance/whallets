@@ -295,7 +295,7 @@ def table_format_wallets(chain):
     # table = []
     line_0 = [
     "#", "USER", "ENS", "TWITTER", "INFO", "ADDRESSES", "NETWORKS"]
-    line_ = ["==", "===========", "===========", "===========",
+    line_ = ["==", "=========", "===========", "===========",
             "===========", "===========", "==========="]
     table = [line_0, line_,]
 
@@ -332,11 +332,10 @@ def table_format_wallets(chain):
     return table
 
 def csv_export():
+    """Exports the wallets to csv files"""
+    # Need to add SPL wallets when they are relevant
     table = table_format_wallets('evm')
     file = 'data/whallets.csv'
-    # with open(file, 'wb') as output:
-    #     new_writer = csv.writer(output)
-    #     new_writer.writerows(table)
     with open(file, 'w') as output:
         new_writer = csv.writer(output)
         for row in table:
