@@ -42,7 +42,7 @@ def main_menu_choice():
         print(tc._missing_operation())
         _new_choice()
     elif choice == '6':
-        print(tc._missing_operation())
+        csv_export()
         _new_choice()
     elif choice.lower() == "q":
         quit()
@@ -335,6 +335,7 @@ def csv_export():
     """Exports the wallets to csv files"""
     # Need to add SPL wallets when they are relevant
     table = table_format_wallets('evm')
+    del table[1]
     file = 'data/whallets.csv'
     with open(file, 'w') as output:
         new_writer = csv.writer(output)
