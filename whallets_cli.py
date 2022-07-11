@@ -3,12 +3,15 @@
 # 1) Learn operating Blockscan APIs
 # 2) Program functions pulling APIs data based on users interaction
 # 3) CLI function to easy add new wallets and other data to the wallets_dict.json
-# - loop through each info separately
-# - ask to re-add info if matches
-# - ask for additional wallets for the same user
-# - add and print all the added wallets
-# - csv export (get away the line row)
+# DONE - loop through each info separately
+# DONE - ask to re-add info if matches
+# DONE - ask for additional wallets for the same user
+# DONE - add and print all the added wallets
+# DONE - csv export (get away the line row)
+# - Network choice on expoer csv option
 # 4) Prints options for the user (-h)
+# 5) Remove wallet option
+# 6) Edit wallet option
 
 import json
 from tabulate import tabulate
