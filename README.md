@@ -8,6 +8,10 @@ Feedback and cooperation/guidance is welcome.
 
 ## Installation
 
+```
+$ git clone https://github.com/darkrenaissance/whallets
+```
+
 ## Programs
 
 * **whallets_cli.py** - the main CLI to interact with the wallet database
