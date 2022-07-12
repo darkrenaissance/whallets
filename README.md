@@ -15,6 +15,7 @@ $ git clone https://github.com/darkrenaissance/whallets
 ## Programs
 
 * **whallets_cli.py** - the main CLI to interact with the wallet database
+`python whallets_cli.py`
 * spl_scv_search.py - contains function to get transactions within a chosen price range
  
 
