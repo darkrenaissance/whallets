@@ -6,6 +6,8 @@ Compiling a list (dictionary) of wallets and an automatized tool to follow monit
 
 Feedback and cooperation/guidance is welcome.
 
+## Installation
+
 ## Programs
 
 * **whallets_cli.py** - the main CLI to interact with the wallet database
