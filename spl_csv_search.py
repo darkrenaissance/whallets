@@ -53,7 +53,7 @@ def get_info():
 
 
 
-def display_csv_txs_usdt(min=100000,max=10000000):
+def display_csv_txs_usdt(min=100000,max=1000000):
     """Prints all tx's within the range of entered amount"""
 
 
