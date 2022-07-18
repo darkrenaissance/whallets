@@ -163,7 +163,7 @@ def _csv_exported():
 def _return_network(ntw_i):
     """Return network based on index"""
     if ntw_i == 0:
-        ntw = "Cosmoss/EVM (ETH and forks)"
+        ntw = "EVM; ETH and forks (BSC, Poly..)"
     elif ntw_i == 1:
         ntw = "Solana Program Library"
     elif ntw_i == 2:
