@@ -8,7 +8,7 @@
 # DONE - ask for additional wallets for the same user
 # DONE - add and print all the added wallets
 # DONE - csv export (get away the line row)
-# - Network choice on expoer csv option
+# - Network choice on exporting csv option
 # 4) Prints options for the user (-h)
 # 5) Remove wallet option
 # 6) Edit wallet option
