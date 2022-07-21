@@ -1,6 +1,6 @@
 """CLI for users to manage the wallet database and run research functions"""
 #TODO:
-# 1) Learn operating Blockscan APIs
+# 1) Learn operating Blockscan.io (etherscan) APIs
 # 2) Program functions pulling APIs data based on users interaction
 # 3) CLI function to easy add new wallets and other data to the wallets_dict.json
 # DONE - loop through each info separately
