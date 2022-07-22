@@ -2,7 +2,7 @@
 #TODO:
 # 1) Learn operating Blockscan.io (etherscan) APIs
 # 2) Program functions pulling APIs data based on users interaction
-# 3) CLI function to easy add new wallets and other data to the wallets_dict.json
+# 3) DONE - CLI function to easy add new wallets and other data to the wallets_dict.json
 # DONE - loop through each info separately
 # DONE - ask to re-add info if matches
 # DONE - ask for additional wallets for the same user
