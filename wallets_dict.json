@@ -669,6 +669,64 @@
                     ]
                 }
             }
+        },
+        "yfi_whale_1": {
+            "twitter": "",
+            "info": "yfi maxi, whale",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x50664ede715e131f584d3e7eaabd7818bb20a068",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "defiance_capital": {
+            "twitter": "https://twitter.com/DeFianceCapital",
+            "info": "web3 VC, suzhu co-founder",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xb4F70F2F0f1A27276571a12e60c64E321f40d47C",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "alt_trader_2": {
+            "twitter": "",
+            "info": "alt whale, SYN, LDO holder",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x0aCA67Fa70B142A3b9bF2eD89A81B40ff85dACdC",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_1": {
+                    "address": "0xb1dde4d00b21c62eda810773b44151e0afe49c1c",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "dscfdog_alt_trader": {
+            "twitter": "",
+            "info": "alt whale, CT pointed as dcfdog, TEMPLE, XMON, gOHM",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xFa4FC4ec2F81A4897743C5b4f45907c02ce06199",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
         }
     },
     "spl_wallets": {
