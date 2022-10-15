@@ -15,8 +15,9 @@
 10,@obvio.eth,obvio.eth, ,whale on eth,0x179456bf16752FE5Eb8789148E5C98Eb39D87Fe5,"erc, bsc, poly, heco, ftm, avax, arb"
 11,@wed.eth,wed.eth, ,nft (eth) trader,0xAB6cA2017548A170699890214bFd66583A0C1754,"erc, bsc, poly, heco, avax"
 12,ftm_whale,, ,whale on fantom,0xebf4fbb9c81b84dd5cf89bc75588e5d0018501b3,"erc, ftm"
-13,parafi,, ,fund,0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363,"erc, heco, avax"
+13,parafi,,,"eth fund, whale",0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363,erc
  , , , , ,0x59cee32f3ffaeabc0d4991ac7569ebad09e1a7d4,erc
+ , , , , ,0xe7dbe6aa7edcc38cb5007b87153d236ad879309b,erc
 14,gmx_degen,, ,"degen who was early in gmx, active small cap investor",0x1e7127c81c8a58661a0811f026b6be66533934be,erc
 15,devmons.eth,devmons.eth, ,"gOHM investor, NFT whale, nansen smart money",0x5efb87c9ff9da9ba445dfef71f0446682352c15d,"erc, bsc, gns, poly, ftm, avx, arb, optm"
 16,Arca, , ,whale,0x23a5efe19aa966388e132077d733672cf5798c03,erc
@@ -31,3 +32,23 @@
  , , , , ,0x5058352e527694a554966154397af9ab79d75461,"poly, arb"
 23,JPEG_wallet, , , ,0xb0dafc466871c29662e5cbf4227322c96a8ccbe9,"erc, poly, avax, arb"
  , , , , ,0xf52bad5e97658f04b5228d58f428e98f9139d23f,erc
+24,hayes_arthur,,https://twitter.com/CryptoHayes,"crypto guru, bitmex cofounder, whale, influencer",0x534A0076fb7c2b1f83FA21497429AD7ad3bD7587,erc
+25,gmx_holder_0,,,gmx whale,0xc411024f65fa6ce31bc0b15f21462d2cd691ce2f,erc
+26,gmx_holder_1,,,gmx whale,0x332a4fb9603ecd65f3a4e321e8c10826c46049af,erc
+27,top_dex_trader,,,nansen smart dex trader,0xB1a5BAACE5444E7793035CBe9D58b4597655BfE3,erc
+28,top_dex_trader_1,,,nansen top dex trader,0xe13cec7b2c10574e5e89a780582b66d2c3c71b80,erc
+29,machibigbrother.eth,machibigbrother.eth,,"eth whale, holder",0x020ca66c30bec2c4fe3861a94e4db4a498a35872,erc
+30,JPEG_trader,,,"alt whale, holder",0x66253b9012b4ea899f634be550ff647a63884448,erc
+31,olagg.eth,olagg.eth,https://twitter.com/CydrakeOLAGG,play to earn gamer,0xadaa3dbcb020b5f8f62a2fd75626c18d59f82281,erc
+32,chainlink_whale_0,,,whale on Link,0xbd02c51150a4ab6ce97b9de2025644594f3e75b8,erc
+33,yfi_whale,,,YFI whale,0xfdc08be176707ac2755e01072400290582a38322,erc
+34,XMON_whale,,,large xmon trader,0x39eea0258a5c3e3c5092b2f910371d124592a7fb,erc
+35,alt_trader,,,"SYN, JPEG, FXS, STG",0x66253b9012b4ea899f634be550ff647a63884448,erc
+36,qcp_capital,,https://twitter.com/QCPCapital,Singapore crypto trading firm,0x527788Ae179be743614496680d38B39D87Ee1ce8,erc
+37,alt_trader_1,,,"SYN, JPEG, smart trader",0xca968044effff14bee263ca6af3b9823f1968f37,erc
+38,dargonfly_capital,,https://twitter.com/DCPCapital,"eth, lido whale, fund, VC",0x641cE4240508eae5dCaeffE991F80941D683Ad64,erc
+39,yfi_whale_1,,,"yfi maxi, whale",0x50664ede715e131f584d3e7eaabd7818bb20a068,erc
+40,defiance_capital,,https://twitter.com/DeFianceCapital,"web3 VC, suzhu co-founder",0xb4F70F2F0f1A27276571a12e60c64E321f40d47C,erc
+41,alt_trader_2,,,"alt whale, SYN, LDO holder",0x0aCA67Fa70B142A3b9bF2eD89A81B40ff85dACdC,erc
+ , , , , ,0xb1dde4d00b21c62eda810773b44151e0afe49c1c,erc
+42,dscfdog_alt_trader,,,"alt whale, CT pointed as dcfdog, TEMPLE, XMON, gOHM",0xFa4FC4ec2F81A4897743C5b4f45907c02ce06199,erc
