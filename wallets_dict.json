@@ -32,7 +32,6 @@
                 }
             }
         },
-
         "@zhusu_3ac": {
             "twitter": "https://twitter.com/zhusu",
             "info": "3AC founder, enterpreteur, Deribit, uncommon core",
@@ -260,21 +259,24 @@
             }
         },
         "parafi": {
-            "twitter": " ",
-            "info": "fund",
+            "twitter": "",
+            "info": "eth fund, whale",
             "ens": "",
             "wallets": {
                 "wallet_0": {
                     "address": "0x4655b7ad0b5f5bacb9cf960bbffceb3f0e51f363",
                     "networks": [
-                        "erc",
-                        "heco",
-                        "avax"
+                        "erc"
                     ]
                 },
-
-                "wallet_1:": {
+                "wallet_1": {
                     "address": "0x59cee32f3ffaeabc0d4991ac7569ebad09e1a7d4",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_2": {
+                    "address": "0xe7dbe6aa7edcc38cb5007b87153d236ad879309b",
                     "networks": [
                         "erc"
                     ]
@@ -294,7 +296,6 @@
                 }
             }
         },
-
         "devmons.eth": {
             "twitter": " ",
             "info": "gOHM investor, NFT whale, nansen smart money",
@@ -311,13 +312,10 @@
                         "avx",
                         "arb",
                         "optm"
-
                     ]
-
                 }
             }
         },
-
         "Arca": {
             "twitter": " ",
             "info": "whale",
@@ -331,7 +329,6 @@
                 }
             }
         },
-
         "Sigil fund": {
             "twitter": " ",
             "info": "gOHM investor",
@@ -357,11 +354,10 @@
                 }
             }
         },
-
         "Stani Kulechov": {
             "twitter": "https://twitter.com/StaniKulechov",
             "info": "CEO and founder of Aave",
-            "ens": " " ,
+            "ens": " ",
             "wallets": {
                 "wallet_0": {
                     "address": "0xf5fb27b912d987b5b6e02a1b1be0c1f0740e2c6f",
@@ -374,7 +370,6 @@
                 }
             }
         },
-
         "punkify.eth": {
             "twitter": " ",
             "info": "whale",
@@ -395,7 +390,6 @@
                 }
             }
         },
-
         "analytico.eth": {
             "twitter": " ",
             "info": "algo trading firm",
@@ -415,7 +409,6 @@
                 }
             }
         },
-
         "XMON_wallet": {
             "twitter": "https://twitter.com/<full_address>",
             "info": "xmon investor",
@@ -438,7 +431,6 @@
                 }
             }
         },
-
         "GMX_wallet": {
             "twitter": " ",
             "info": " ",
@@ -461,7 +453,6 @@
                 }
             }
         },
-
         "JPEG_wallet": {
             "twitter": " ",
             "info": " ",
@@ -483,11 +474,74 @@
                     ]
                 }
             }
+        },
+        "hayes_arthur": {
+            "twitter": "https://twitter.com/CryptoHayes",
+            "info": "crypto guru, bitmex cofounder, whale, influencer",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x534A0076fb7c2b1f83FA21497429AD7ad3bD7587",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "gmx_holder_0": {
+            "twitter": "",
+            "info": "gmx whale",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xc411024f65fa6ce31bc0b15f21462d2cd691ce2f",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "gmx_holder_1": {
+            "twitter": "",
+            "info": "gmx whale",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x332a4fb9603ecd65f3a4e321e8c10826c46049af",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "top_dex_trader": {
+            "twitter": "",
+            "info": "nansen smart dex trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xB1a5BAACE5444E7793035CBe9D58b4597655BfE3",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "top_dex_trader_1": {
+            "twitter": "",
+            "info": "nansen top dex trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xe13cec7b2c10574e5e89a780582b66d2c3c71b80",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
         }
-
     },
-    "spl_wallets":
-    {
+    "spl_wallets": {
         "@Cyrii": {
             "twitter": "https://twitter.com/cyrii_MM",
             "info": "$COPE - main dev/founder, main holder, cult",
