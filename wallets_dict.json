@@ -591,6 +591,84 @@
                     ]
                 }
             }
+        },
+        "yfi_whale": {
+            "twitter": "",
+            "info": "YFI whale",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xfdc08be176707ac2755e01072400290582a38322",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "XMON_whale": {
+            "twitter": "",
+            "info": "large xmon trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x39eea0258a5c3e3c5092b2f910371d124592a7fb",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "alt_trader": {
+            "twitter": "",
+            "info": "SYN, JPEG, FXS, STG",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x66253b9012b4ea899f634be550ff647a63884448",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "qcp_capital": {
+            "twitter": "https://twitter.com/QCPCapital",
+            "info": "Singapore crypto trading firm",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x527788Ae179be743614496680d38B39D87Ee1ce8",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "alt_trader_1": {
+            "twitter": "",
+            "info": "SYN, JPEG, smart trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xca968044effff14bee263ca6af3b9823f1968f37",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "dargonfly_capital": {
+            "twitter": "https://twitter.com/DCPCapital",
+            "info": "eth, lido whale, fund, VC",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x641cE4240508eae5dCaeffE991F80941D683Ad64",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
         }
     },
     "spl_wallets": {
