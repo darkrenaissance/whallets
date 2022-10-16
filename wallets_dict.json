@@ -190,20 +190,14 @@
             }
         },
         "alt_degen": {
-            "twitter": " ",
-            "info": "smaller alt degen play wallet, name is made up",
-            "ens": " ",
+            "twitter": "",
+            "info": "smart SHIB trader",
+            "ens": "",
             "wallets": {
                 "wallet_0": {
-                    "address": "0x1d3db45f912c74de554409c1ad0d27dbcb26b726",
+                    "address": "0xb951da3870f7b7d1e3f9249c18e93d5cc5c3565c",
                     "networks": [
-                        "erc",
-                        "bsc",
-                        "poly",
-                        "heco",
-                        "ftm",
-                        "avax",
-                        "arb"
+                        "erc"
                     ]
                 }
             }
@@ -821,6 +815,110 @@
             "wallets": {
                 "wallet_0": {
                     "address": "0x5058352e527694a554966154397af9ab79d75461",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "gmx_trader_1": {
+            "twitter": "",
+            "info": "smart rdpx trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xe954d86ced76843af8c3dd5ee355e79711ade218",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "gmx_trader_2": {
+            "twitter": "",
+            "info": "smart rdpx wallet",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xd446da26186d8d4daedc59bdc36e1ddf6e8c866e",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "gmx_trader_3": {
+            "twitter": "",
+            "info": "smart rdpx wallet",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x000aba3fffb94d769c3aa1b3eacdc237de18802e",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "alt_degen_2": {
+            "twitter": "",
+            "info": "bought dip of STG, big in SYN",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x66253B9012b4Ea899F634Be550fF647a63884448",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "xmon_degen_0": {
+            "twitter": "",
+            "info": "xmon smart trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x8c75d3585a21c21bb62cc255836d6531bd948f1a",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "xmon_degen_1": {
+            "twitter": "",
+            "info": "smart xmon wallet",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x3f3e305c4ad49271ebda489dd43d2c8f027d2d41",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "xmon_degen_2": {
+            "twitter": "",
+            "info": "xmon trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x7bfee91193d9df2ac0bfe90191d40f23c773c060",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "yugen.eth": {
+            "twitter": "",
+            "info": "top holder of JPEG token",
+            "ens": "yugen.eth",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xcd0dfaca0d82e33701bd0b36631eb04955c563d6",
                     "networks": [
                         "erc"
                     ]
