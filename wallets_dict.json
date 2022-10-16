@@ -727,6 +727,105 @@
                     ]
                 }
             }
+        },
+        "eth_genesis_wallets": {
+            "twitter": "",
+            "info": "Wlllets invested in eth for ~30 cents",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x4baf012726cb5ec7dda57bc2770798a38100c44d",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_1": {
+                    "address": "0xf07160094bb9301f9d6fd1bd00a8833c3dc9d526",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_2": {
+                    "address": "0x35c9bbd1e0ddeadca4118a2378e9b0d1959b79f1",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_3": {
+                    "address": "0xb1e52e319b83dd3bedbae9878b63f67b535de2be",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_4": {
+                    "address": "0xa60c073eaa1bdc3f56af8a9292b9a1e6d3c7e5b7",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_5": {
+                    "address": "0x222c7918f7c2c967cabc6d3fa56a12806c06a6d9",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_6": {
+                    "address": "0x815c4715f6f2985277b88e4f3b69801df7d16ece",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_7": {
+                    "address": "0xbf4e47672b9418865bb27147d1b09fcb00573c06",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_8": {
+                    "address": "0x98ab144e1cc97c83fca2413f0d41b737b8785e1f",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_9": {
+                    "address": "0x5406217655c8debe51774c08a0a7cb516ba2f122",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_10": {
+                    "address": "0xf07160094bb9301f9d6fd1bd00a8833c3dc9d526",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "shitcoin_gambler_0": {
+            "twitter": "",
+            "info": "smart money shitcoin trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x67f72412A592D066A2e688e62664116dEAbEab29",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "gmx_trader_0": {
+            "twitter": "",
+            "info": "smart buyer of GMX and rdpx",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x5058352e527694a554966154397af9ab79d75461",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
         }
     },
     "spl_wallets": {
