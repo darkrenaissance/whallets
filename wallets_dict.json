@@ -924,6 +924,186 @@
                     ]
                 }
             }
+        },
+        "alt_terminator": {
+            "twitter": "",
+            "info": "10x on doge, alt degen",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x3dca07e16b2becd3eb76a9f9ce240b525451f887",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "farmer_x": {
+            "twitter": "",
+            "info": "yield farmer, sharp trader, whale",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x36cc7b13029b5dee4034745fb4f24034f3f2ffc6",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "xmon_degen_3": {
+            "twitter": "",
+            "info": "sharp xmon trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xfa4fc4ec2f81a4897743c5b4f45907c02ce06199",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "bone_trader_bundle": {
+            "twitter": "",
+            "info": "Several wallets smart trading BONE token",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xcc3e0238ab75ce515e7be86112c0f2386a672796",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_1": {
+                    "address": "0x8129d4010a676a660502a4770d8a97f8d1788e5f",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_2": {
+                    "address": "0x425824db2eec7c908e5af79f951b57a94e9bd751",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_3": {
+                    "address": "0xe7fa51643dae5235307b619fdac1f94b9b84f4aa",
+                    "networks": [
+                        "erc"
+                    ]
+                },
+                "wallet_4": {
+                    "address": "0xb8ac63a0f6205f455ba10796aec5ed56e841d961",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "dex_trader_0": {
+            "twitter": "",
+            "info": "big trades of ENS",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x1067b1cdc25600d8a4db2bdf12baab4da0221f5d",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "andrew_kang": {
+            "twitter": "",
+            "info": "big APE holder, dumper whale",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xff3879b8a363aed92a6eaba8f61f1a96a9ec3c1e",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "alt_degen_3": {
+            "twitter": "",
+            "info": "smart CNC and other alt trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x6c1DdFb81A3666188267296F10253a5A9b5BAe40",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "alt_degen_4": {
+            "twitter": "",
+            "info": "10x on CNC within a day, ",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xc42c23c8287050c6d0cda3146b89efbb8ab7c748",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "ledger_prime": {
+            "twitter": "",
+            "info": "sharp alt trader, GMX trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x475a64058BcBa94E5CfA7b76dbC49EAADf73D0f0",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "dex_trader_1": {
+            "twitter": "",
+            "info": "large dex postions trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x1beb1715899a355dfca4c763080e88f35286d025",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "master_ventures": {
+            "twitter": "",
+            "info": "large dex trader",
+            "ens": "",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0xd266d61ac22c2a2ac2dd832e79c14ea152c998d6",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
+        },
+        "Leaksblockchain.eth": {
+            "twitter": "",
+            "info": "large GMX trader",
+            "ens": "Leaksblockchain.eth ",
+            "wallets": {
+                "wallet_0": {
+                    "address": "0x00336cd9f823dd8b5c5741638e5038fd561f01b9",
+                    "networks": [
+                        "erc"
+                    ]
+                }
+            }
         }
     },
     "spl_wallets": {
