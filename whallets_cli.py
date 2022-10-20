@@ -1,17 +1,20 @@
 """CLI for users to manage the wallet database and run research functions"""
 #TODO:
-# 1) Learn operating Blockscan.io (etherscan) APIs
-# 2) Program functions pulling APIs data based on users interaction
-# 3) DONE - CLI function to easy add new wallets and other data to the wallets_dict.json
+# 1) Clean and simplify the code
+# - comment off all the SPL and BTC options
+# Simplify the dict/csv etc
+# 2) Learn operating Blockscan.io (etherscan) APIs
+# 3) Program functions pulling APIs data based on users interaction
+# 4) DONE - CLI function to easy add new wallets and other data to the wallets_dict.json
 # DONE - loop through each info separately
 # DONE - ask to re-add info if matches
 # DONE - ask for additional wallets for the same user
 # DONE - add and print all the added wallets
 # DONE - csv export (get away the line row)
 # - Network choice on exporting csv option
-# 4) Prints options for the user (-h)
-# 5) Remove wallet option
-# 6) Edit wallet option
+# 5) Prints options for the user (-h)
+# 6) Remove wallet option
+# 7) Edit wallet option
 
 import json
 from tabulate import tabulate
@@ -30,19 +33,12 @@ def main_menu_choice():
     choice = input(tc._menu_choice())
     if choice == '1':
         add_wallet()
-
     elif choice == '2':
-        print(tc._missing_operation())
-        _new_choice()
-    elif choice == '3':
         display_all_wallets()
+    elif choice == '3':
+        print(tc._missing_operation())
+        _new_choice()
     elif choice == '4':
-        print(tc._missing_operation())
-        _new_choice()
-    elif choice == '5':
-        print(tc._missing_operation())
-        _new_choice()
-    elif choice == '6':
         csv_export()
         _new_choice()
     elif choice.lower() == "q":
@@ -144,7 +140,8 @@ def remove_wallet():
 
 def get_inputs():
     """Get infor to add a new wallet"""
-    ntw_i = _check_network()
+    #ntw_i = _check_network()
+    ntw_i = 0
     network = tc._return_network(ntw_i)
     addresses = []
     new_wallet = {
@@ -212,17 +209,17 @@ def _correct_item(x,key):
 
     return new_item
 
-
-def _check_network():
-    """Check if the existing network"""
-    print(tabulate(tc._choose_network()))
-    ntw = int(input(tc._menu_choice()))
-    i = ntw - 1
-    if i != 0:
-        print(tc._missing_operation())
-        _new_choice()
-    else:
-        return i
+# Commenting out the network option, keeping ETH only - simplify!
+# def _check_network():
+#     """Check if the existing network"""
+#     print(tabulate(tc._choose_network()))
+#     ntw = int(input(tc._menu_choice()))
+#     i = ntw - 1
+#     if i != 0:
+#         print(tc._missing_operation())
+#         _new_choice()
+#     else:
+#         return i
 
 
 def get_wallets():

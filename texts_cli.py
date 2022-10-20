@@ -14,21 +14,20 @@ def _main_menu():
     line_0 = ("**","MAIN MENU:")
     line = ("---","------------------------")
     line_1 = ("1 -","Add a wallet")
-    line_2 = ("2 -","Remove a wallet")
-    line_3 = ("3 -","Display wallet database")
-    line_4 = ("4 -","Display whale TXs on your EVM list")
-    line_5 = ("5 -","Display whale TXs on your SPL list")
-    line_6 = ("6 -","Export wallet database to csv")
-    line_q = ("q -","Quit!")
+    # line_2 = ("2 -","Remove a wallet")
+    line_3 = ("2 -","Display wallet database")
+    line_4 = ("3 -","Display whale TXs on your EVM list (option not active yet)")
+    # line_5 = ("5 -","Display whale TXs on your SPL list")
+    line_6 = ("4 -","Export wallet database to csv")
+    line_q = ("Q -","Quit!")
 
     table = [
         line_0,
         line,
         line_1,
-        line_2,
+        #line_2,
         line_3,
         line_4,
-        line_5,
         line_6,
         line_q
     ]
@@ -55,16 +54,16 @@ def _ask_new_choice():
         "Do you have another choice?\n1 - YES\n2 - NO (quit)\n"
     return msg
 
-
-def _choose_network():
-    """Gives a choice of networks to work with"""
-    line_0 = ("**","Please chose the network for the wallet address:")
-    line = ("---", "---------------------------------",)
-    line_1 = ("1 -","EVM; Etherum main net and any forks (BSC, Poly..)")
-    line_2 = ("2 -","SPL; Solana Program Platform")
-    line_3 = ("3 -","BTC; Bitcoin")
-    table = [ line_0, line, line_1, line_2, line_3]
-    return table
+# Commentig out, simplified to ETH only
+# def _choose_network():
+#     """Gives a choice of networks to work with"""
+#     line_0 = ("**","Please chose the network for the wallet address:")
+#     line = ("---", "---------------------------------",)
+#     line_1 = ("1 -","EVM; Etherum main net and any forks (BSC, Poly..)")
+#     line_2 = ("2 -","SPL; Solana Program Platform")
+#     line_3 = ("3 -","BTC; Bitcoin")
+#     table = [ line_0, line, line_1, line_2, line_3]
+#     return table
 
 
 def _prompt_new_info(item):
