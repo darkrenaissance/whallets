@@ -88,7 +88,7 @@ def confirm_entry(ntw_i, addresses, new_wallet):
 
 def save_wallet(ntw_i, new_wallet_dictionary):
     """Saves the wallet into the database/dictionary and informs the user"""
-    filename = 'wallets_dict.json'
+    filename = 'data/wallets_dict.json'
 
     with open(filename) as f:
         all_wallets = json.load(f)
@@ -224,7 +224,7 @@ def _correct_item(x,key):
 
 def get_wallets():
     """ Gets the info from the dictionary """
-    filename = 'wallets_dict.json'
+    filename = 'data/whallets_dict.json'
     with open(filename) as f:
         all_wallets = json.load(f)
     evm_wallets = all_wallets['evm_wallets']
