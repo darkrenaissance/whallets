@@ -1,9 +1,9 @@
-"""CLI for users to manage the wallet database and run research functions"""
+"""CLI managing a wallet database and run research functions"""
 #TODO:
 # 1) Clean and simplify the code
 # - comment off all the SPL and BTC options
-# Simplify the dict/csv etc
-# 2) Learn operating Blockscan.io (etherscan) APIs
+# - remove dics and use csv & pandas only
+# 2) Add Blockscan.io (etherscan) API commands
 # 3) Program functions pulling APIs data based on users interaction
 # 4) DONE - CLI function to easy add new wallets and other data to the wallets_dict.json
 # DONE - loop through each info separately
@@ -12,7 +12,7 @@
 # DONE - add and print all the added wallets
 # DONE - csv export (get away the line row)
 # - Network choice on exporting csv option
-# 5) Prints options for the user (-h)
+# 5) Change the custom menu for argparser
 # 6) Remove wallet option
 # 7) Edit wallet option
 
